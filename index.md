@@ -1,6 +1,5 @@
 ---
-title: SEEA-AFF Guatemala
-author: _Preparado por [Renato Vargas](https://gt.linkedin.com/in/revargas)_ 
+title: SEEA-AFF Guatemala 
 css: stylesheets/main.css
 ---
 
@@ -13,6 +12,8 @@ pandoc -f markdown -t html5 -s index.md --toc -o index.html
 |:---:|
 | Puede ver y descargar los archivos  del proyecto en [GitHub](https://github.com/renatovargas/seea-aff).|    
 
+_Preparado por [Renato Vargas](https://gt.linkedin.com/in/revargas) para el proceso de contabilidad ambiental y económica de Guatemala, con el apoyo de la iniciativa [WAVES](http://www.wavespartnership.org)._
+
 ## Introducción
 
 El **Sistema de Contabilidad Ambiental y Económica de Guatemala (SCAE)** presenta una adición a su arsenal de herramientas analíticas. Con el apoyo metodológico de FAO, se ha creado un manual llamado [SEEA-AFF](http://unstats.un.org/unsd/envaccounting/aff/chapterList.asp). 
@@ -21,7 +22,7 @@ El **Sistema de Contabilidad Ambiental y Económica de Guatemala (SCAE)** presen
 
 El SEEA-AFF tiene el objetivo general de examinar la conexión entre el ambiente y las actividades económicas relacionadas con la agricultura, la silvicultura y las actividades de pesca[^1]. Busca facilitar la comprensión y el análisis de las interrelaciones entre estas actividades que deben considerarse en la planificación nacional y local. 
 
-[^1]: Definidas por la Clasificación Internacional Industrial Uniforme (CIIU), sección A, divisiones 01, 02 y 03.
+[^1]: Definidas por la [Clasificación Internacional Industrial Uniforme (CIIU)](http://unstats.un.org/unsd/cr/registry/default.asp?Lg=3), sección [A](http://unstats.un.org/unsd/cr/registry/regcs.asp?Cl=27&Lg=1&Co=A), divisiones [01](http://unstats.un.org/unsd/cr/registry/regcs.asp?Cl=27&Lg=1&Co=01), [02](http://unstats.un.org/unsd/cr/registry/regcs.asp?Cl=27&Lg=1&Co=02) y [03](http://unstats.un.org/unsd/cr/registry/regcs.asp?Cl=27&Lg=1&Co=03).
 
 ## Alcance
 
