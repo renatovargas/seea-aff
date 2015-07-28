@@ -1,3 +1,7 @@
+---
+css: stylesheets/main.css
+---
+
 # SEEA-AFF Guatemala
 
 <!-- pandoc -f markdown -t html5 -c stylesheets/main.css -s index.md -o index.html -->
