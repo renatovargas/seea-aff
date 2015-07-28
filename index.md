@@ -5,7 +5,7 @@ css: stylesheets/main.css
 
 <!-- 
 Compilar con Pandoc:
-pandoc -f markdown -t html5 -s index.md --toc -N -o index.html 
+pandoc -f markdown -t html5 -s index.md --toc -o index.html 
 -->
 
 _Repositorio preparado y mantenido por [Renato Vargas](https://gt.linkedin.com/in/revargas) para el proceso de contabilidad ambiental y económica de Guatemala, con el apoyo de la iniciativa [WAVES](http://www.wavespartnership.org)._
