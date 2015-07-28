@@ -16,7 +16,9 @@ _Preparado por [Renato Vargas](https://gt.linkedin.com/in/revargas) para el proc
 
 ## Introducción
 
-El **Sistema de Contabilidad Ambiental y Económica de Guatemala (SCAE)** presenta una adición a su arsenal de herramientas analíticas. Con el apoyo metodológico de FAO, se ha creado un manual llamado [SEEA-AFF](http://unstats.un.org/unsd/envaccounting/aff/chapterList.asp). 
+El **Sistema de Contabilidad Ambiental y Económica de Guatemala (SCAE)** presenta una adición a su familia de marcos analíticos. Con el apoyo metodológico de FAO, se ha creado un manual llamado [SEEA-AFF](http://unstats.un.org/unsd/envaccounting/aff/chapterList.asp) para el análisis de la relación entre la agricultura, la silvicultura y la pesca con el ambiente natural. Guatemala es uno de los países piloto para la implementación de este manual.
+
+El repositorio **seea-aff** contiene los archivos necesarios para la generación del SEEA-AFF para Guatemala. Se fundamenta en la información de cuentas ambientales en la base de datos **naturacc_cuentas** y se complementa con otras fuentes. También se incluye la documentación y elementos didácticos de presentación.
 
 ## Objetivo
 
