@@ -16,9 +16,13 @@ _Repositorio preparado y mantenido por [Renato Vargas](https://gt.linkedin.com/i
 |:---:|
 | Puede ver y descargar los archivos  del proyecto, incluyendo esta página, en [GitHub](https://github.com/renatovargas/seea-aff).|    
 
-**Datos (Excel, SPSS, CSV, etc.)**
-
 **Archivos de procesamiento (R, PostgreSQL, etc.)**
+
+| Archivo | Descripcion|
+|---|---|
+| [**seea-aff-00.R**](https://github.com/renatovargas/seea-aff/blob/master/scripts/seea-aff-00.R) | Conectar a base de datos PostgreSQL y cargar tablas SCAE GT. |
+
+**Datos (Excel, SPSS, CSV, etc.)**
 
 **Documentos (HTMl, docx, pptx, pdf)**
 
