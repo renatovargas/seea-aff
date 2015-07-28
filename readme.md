@@ -4,9 +4,8 @@ El **Sistema de Contabilidad Ambiental y Económica de Guatemala (SCAE)** presen
 
 ## Objetivo
 
-El SEEA-AFF tiene el objetivo general de examinar la conexión entre el ambiente y las actividades económicas relacionadas con la agricultura, la silvicultura y las actividades de pesca[^1]. Busca facilitar la comprensión y el análisis de las interrelaciones entre estas actividades que deben considerarse en la planificación nacional y local. 
+El SEEA-AFF tiene el objetivo general de examinar la conexión entre el ambiente y las actividades económicas relacionadas con la agricultura, la silvicultura y las actividades de pesca, definidas por la Clasificación Internacional Industrial Uniforme (CIIU), sección A, divisiones 01, 02 y 03. Busca facilitar la comprensión y el análisis de las interrelaciones entre estas actividades que deben considerarse en la planificación nacional y local. 
 
-[^1]: Definidas por la Clasificación Internacional Industrial Uniforme (CIIU), sección A, divisiones 01, 02 y 03.
 
 ## Alcance
 
