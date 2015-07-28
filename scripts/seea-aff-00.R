@@ -29,7 +29,7 @@ summary(con)
 
 # Ver las tablas disponibles
 
-#dbListTables(con)
+dbListTables(con)
 
 # En el caso de la bd del SCAE:
 #
