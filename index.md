@@ -17,9 +17,10 @@ El SEEA-AFF tiene el objetivo general de examinar la conexión entre el ambiente
 [^1]: Definidas por la Clasificación Internacional Industrial Uniforme (CIIU), sección A, divisiones 01, 02 y 03.
 
 1. **Productos agrícolas y activos ambientales relacionados**
-  * Cuenta de flujos físicos para cultivos. 
-  * Cuenta de flujos físicos de productos pecuarios. 
-  * Cuenta de activos de ganadería. Cuenta de activos para cultivos plantados.  
+    + Cuenta de flujos físicos para cultivos. 
+    + Cuenta de flujos físicos de productos pecuarios. 
+    + Cuenta de activos de ganadería. Cuenta de activos para cultivos plantados.  
+
 2. **Productos forestales y activos ambientales relacionados**   
   * Cuenta de flujos físicos para madera y productos no-maderables del bosque. 
   * Cuenta de activos del bosque.   Cuenta de activos para recursos maderables.
