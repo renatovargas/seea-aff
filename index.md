@@ -5,10 +5,22 @@ css: stylesheets/main.css
 
 <!-- 
 Compilar con Pandoc:
-pandoc -f markdown -t html5 -s index.md --toc -o index.html 
+pandoc -f markdown -t html5 -s index.md --toc -N -o index.html 
 -->
 
 _Repositorio preparado y mantenido por [Renato Vargas](https://gt.linkedin.com/in/revargas) para el proceso de contabilidad ambiental y económica de Guatemala, con el apoyo de la iniciativa [WAVES](http://www.wavespartnership.org)._
+
+## Descargas
+
+||
+|:---:|
+| Puede ver y descargar los archivos  del proyecto, incluyendo esta página, en [GitHub](https://github.com/renatovargas/seea-aff).|    
+
+**Datos (Excel, SPSS, CSV, etc.)**
+
+**Archivos de procesamiento (R, PostgreSQL, etc.)**
+
+**Documentos (HTMl, docx, pptx, pdf)**
 
 ## Introducción
 
@@ -76,15 +88,5 @@ El ejercicio piloto del SEEA-AFF de Guatemala ha sido preparado durante el mes d
 |**(24/08 - 28/08)**| Desarrollo de reporte de recomendaciones para la implementación regular del SEEA-AFF (incluye cuadros, hallazgos relevantes y usos potenciales de política pública). |
 | **(27/08 - 01/09)** | Coordinación con entidades públicas (Instituto Nacional de Estadística, Ministerio de Agricultura). |
 | **(02/09 - 03/09)** | Presentación en _FAO Regional Statistical Commision for latin America and the Caribbean Meeting_ celebrada 2 y 3 de septiembre en Panamá. |
+| **(04/09 - 18/09)** | Incorporación de observaciones a las presentaciones. |
 
-## Descargas
-
-||
-|:---:|
-| Puede ver y descargar los archivos  del proyecto en [GitHub](https://github.com/renatovargas/seea-aff).|    
-
-**Datos (Excel, SPSS, CSV, etc.)**
-
-**Archivos de procesamiento (R, PostgreSQL, etc.)**
-
-**Documentos (HTMl, docx, pptx, pdf)**
