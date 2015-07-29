@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="generator" content="pandoc">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+  <title>SEEA-AFF Guatemala</title>
+  <style type="text/css">code{white-space: pre;}</style>
+  <!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+  <link rel="stylesheet" href="stylesheets/main.css">
+</head>
+<body>
+<header>
+<h1 class="title">SEEA-AFF Guatemala</h1>
+</header>
+<nav id="TOC">
+<ul>
+<li><a href="#descargas">Descargas</a></li>
+<li><a href="#introducción">Introducción</a></li>
+<li><a href="#objetivo">Objetivo</a></li>
+<li><a href="#alcance">Alcance</a></li>
+<li><a href="#ruta-de-implementación">Ruta de implementación</a></li>
+</ul>
+</nav>
+<!-- 
+Compilar con Pandoc:
+pandoc -f markdown -t html5 -s index_es.md --toc -o index_es.html 
+-->
+<p><em>Repositorio preparado y mantenido por <a href="https://gt.linkedin.com/in/revargas">Renato Vargas</a> para el proceso de contabilidad ambiental y económica de Guatemala, con el apoyo de la iniciativa <a href="http://www.wavespartnership.org">WAVES</a>.</em></p>
+<h2 id="descargas">Descargas</h2>
+<table>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;">Puede ver y descargar los archivos del proyecto, incluyendo esta página, en <a href="https://github.com/renatovargas/seea-aff">GitHub</a>.</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Archivos de procesamiento (R, PostgreSQL, etc.)</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Archivo</th>
+<th style="text-align: left;">Descripcion</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"><a href="https://github.com/renatovargas/seea-aff/blob/master/scripts/seea-aff-00.R"><strong>seea-aff-00.R</strong></a></td>
+<td style="text-align: left;">Conectar a base de datos PostgreSQL y cargar tablas SCAE GT.</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Datos (Excel, SPSS, CSV, etc.)</strong></p>
+<p><strong>Documentos (HTMl, docx, pptx, pdf)</strong></p>
+<h2 id="introducción">Introducción</h2>
+<p>El <strong>Sistema de Contabilidad Ambiental y Económica de Guatemala (SCAE)</strong> presenta una adición a su familia de marcos analíticos. Con el apoyo metodológico de FAO, se ha creado un manual llamado <a href="http://unstats.un.org/unsd/envaccounting/aff/chapterList.asp">SEEA-AFF</a> para el análisis de la relación entre la agricultura, la silvicultura y la pesca con el ambiente natural. Guatemala es uno de los países piloto para la implementación de este manual.</p>
+<p>El repositorio <a href="https://github.com/renatovargas/seea-aff"><strong>seea-aff</strong></a> contiene los archivos necesarios para la generación de una compilación piloto del SEEA-AFF para Guatemala. Se fundamenta en la información de cuentas ambientales en la base de datos <strong>naturacc_cuentas</strong><a href="#fn1" class="footnoteRef" id="fnref1"><sup>1</sup></a> y se complementa con otras fuentes. También se incluye la documentación y elementos didácticos de presentación.</p>
+<h2 id="objetivo">Objetivo</h2>
+<p>El SEEA-AFF tiene el objetivo general de examinar la conexión entre el ambiente y las actividades económicas relacionadas con la agricultura, la silvicultura y las actividades de pesca<a href="#fn2" class="footnoteRef" id="fnref2"><sup>2</sup></a>. Busca facilitar la comprensión y el análisis de las interrelaciones entre estas actividades que deben considerarse en la planificación nacional y local.</p>
+<h2 id="alcance">Alcance</h2>
+<ol type="1">
+<li><strong>Productos agrícolas y activos ambientales relacionados</strong>
+<ul>
+<li>Cuenta de flujos físicos para cultivos.</li>
+<li>Cuenta de flujos físicos de productos pecuarios.</li>
+<li>Cuenta de activos de ganadería.</li>
+<li>Cuenta de activos para cultivos plantados.<br /></li>
+</ul></li>
+<li><strong>Productos forestales y activos ambientales relacionados</strong>
+<ul>
+<li>Cuenta de flujos físicos para madera y productos no-maderables del bosque.</li>
+<li>Cuenta de activos del bosque. Cuenta de activos para recursos maderables.</li>
+</ul></li>
+<li><strong>Productos de la pesca y activos ambientales relacionados</strong>
+<ul>
+<li>Cuenta de activos físicos para la pesca y los productos acuáticos.<br /></li>
+<li>Cuenta de activos piscícolas y otros recursos acuáticos.<br /></li>
+</ul></li>
+<li><strong>Recursos hídricos</strong>
+<ul>
+<li>Cuenta de activos para recursos hídricos.<br /></li>
+<li>Cuenta de flujos físicos para abstracción de agua.<br /></li>
+<li>Cuenta de flujos físicos para distribución y uso de agua.<br /></li>
+</ul></li>
+<li><strong>Energía</strong>
+<ul>
+<li>Cuenta de flujos físicos para uso energético.</li>
+</ul></li>
+<li><strong>Emisiones de gases efecto invernadero (GEI)</strong>
+<ul>
+<li>Cuenta de flujos físicos para emisiones de GEI.</li>
+</ul></li>
+<li><strong>Fertilizantes, flujo de nutrientes y pesticidas</strong>
+<ul>
+<li>Cuenta de flujos físicos para fertilizantes.<br /></li>
+<li>Inventario de Nitrógeno y Fósforo.</li>
+<li>Cuenta de flujos físicos de pesticidas.</li>
+</ul></li>
+<li><strong>Tierra</strong>
+<ul>
+<li>Cuenta de activos de tierra.</li>
+<li>Cuenta de activos de cobertura.<br /></li>
+</ul></li>
+<li><strong>Suelo</strong>
+<ul>
+<li>Cuenta de activos para recursos del suelo.</li>
+</ul></li>
+<li><strong>Otros datos económicos</strong>
+<ul>
+<li>Cuadro de oferta y utilización para productos agrícolas, silvícolas y de acuicultura.</li>
+<li>Cuenta de producción extendida y cuenta de ingresos para actividades agrícolas, silvícolas y piscícolas.</li>
+</ul></li>
+</ol>
+<h2 id="ruta-de-implementación">Ruta de implementación</h2>
+<p>El ejercicio piloto del SEEA-AFF de Guatemala ha sido preparado durante el mes de agosto de 2015, bajo los principios siguientes:</p>
+<ol type="1">
+<li>La compilación del SEEA-AFF es replicable.</li>
+<li>Las decisiones metodológicas de compilación del SEEA-AFF están documentadas.</li>
+<li>Las fuentes de datos están disponibles.</li>
+<li>Se reduce el error humano en la compilación a través de métodos automatizados.</li>
+<li>Se fomenta activamente el acceso a la información a través del uso de formatos abiertos y propietarios de amplia difusión para la puesta a disposición de datos y documentos en línea.</li>
+</ol>
+<table>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Fechas (2015)</th>
+<th style="text-align: left;">Actividades</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"><strong>(24/07 - 31/07)</strong></td>
+<td style="text-align: left;">Adaptación de las recomendaciones de compilación al contexto nacional.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>(03/08 - 07/08)</strong></td>
+<td style="text-align: left;">Documentación de fuentes de información (disponibilidad de datos y brechas de información).</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>(10/08 - 21/08)</strong></td>
+<td style="text-align: left;">Compilación y documentación del SEEA-AFF Guatemala.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>(24/08 - 28/08)</strong></td>
+<td style="text-align: left;">Desarrollo de reporte de recomendaciones para la implementación regular del SEEA-AFF (incluye cuadros, hallazgos relevantes y usos potenciales de política pública).</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>(27/08 - 01/09)</strong></td>
+<td style="text-align: left;">Coordinación con entidades públicas (Instituto Nacional de Estadística, Ministerio de Agricultura).</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>(02/09 - 03/09)</strong></td>
+<td style="text-align: left;">Presentación en <em>FAO Regional Statistical Commision for latin America and the Caribbean Meeting</em> celebrada 2 y 3 de septiembre en Panamá.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>(04/09 - 18/09)</strong></td>
+<td style="text-align: left;">Incorporación de observaciones a las presentaciones.</td>
+</tr>
+</tbody>
+</table>
+<section class="footnotes">
+<hr />
+<ol>
+<li id="fn1"><p>Preparada por José Miguel Barrios.<a href="#fnref1">↩</a></p></li>
+<li id="fn2"><p>Definidas por la <a href="http://unstats.un.org/unsd/cr/registry/default.asp?Lg=3">Clasificación Internacional Industrial Uniforme (CIIU)</a>, sección <a href="http://unstats.un.org/unsd/cr/registry/regcs.asp?Cl=27&amp;Lg=1&amp;Co=A">A</a>, divisiones <a href="http://unstats.un.org/unsd/cr/registry/regcs.asp?Cl=27&amp;Lg=1&amp;Co=01">01</a>, <a href="http://unstats.un.org/unsd/cr/registry/regcs.asp?Cl=27&amp;Lg=1&amp;Co=02">02</a> y <a href="http://unstats.un.org/unsd/cr/registry/regcs.asp?Cl=27&amp;Lg=1&amp;Co=03">03</a>.<a href="#fnref2">↩</a></p></li>
+</ol>
+</section>
+</body>
+</html>
