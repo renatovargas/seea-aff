@@ -8,7 +8,7 @@ Compile with Pandoc:
 pandoc -f markdown -t html5 -s index.md --toc -o index.html 
 -->
 
-[[English]](/index.html)  [[Español]](/index_es.html) 
+[[English]](index.html)  [[Español]](index_es.html) 
 
 _Repository created and mantained by [Renato Vargas](https://gt.linkedin.com/in/revargas) for the Guatemalan System of Environmental and Economic Accounts (SEEA), with support from the Wealth Accounting and the Valuation of Ecosystem Services [(WAVES)](http://www.wavespartnership.org) initiative._
 
