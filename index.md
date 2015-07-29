@@ -44,47 +44,40 @@ According to the [draft manual](http://unstats.un.org/unsd/envaccounting/aff/GC_
 
 The draft SEEA AFF has the following data domains and base accounts:
 
-**1. Agricultural products and related environmental assets**	
-  * Physical flow account for crops
-  * Physical flow account for livestock products
-  * Asset account for livestock
-  * Asset account for plantation crops
-  
-**2. Forestry products and related environmental assets**
-  * Physical flow account for timber and non-wood forest products
-  * Asset account for forests
-  * Asset account for timber resources
+1. Agricultural products and related environmental assets	
+    * Physical flow account for crops
+    * Physical flow account for livestock products
+    * Asset account for livestock
+    * Asset account for plantation crops
+2. Forestry products and related environmental assets
+    * Physical flow account for timber and non-wood forest products
+    * Asset account for forests
+    * Asset account for timber resources
+3. Fisheries products and related environmental assets**
+    * Physical flow account for fish and aquatic products
+    * Asset account for fish and other aquatic resources
+4. Water resources	
+    * Asset account for water resources
+    * Physical flow account for water abstraction
+    * Physical flow account for water distribution and use
+5. Energy
+    * Physical flow account for energy use
+6. Greenhouse Gas GHG emissions
+    * Physical flow account for GHG emissions
+7. Fertilizers, nutrient flows and pesticides
+    * Physical flow account for fertilizers
+    * Nitrogen and phosphorous budgets[^1]
+    * Physical flow account for pesticides
+8. Land
+    * Asset account for land use
+    * Asset account for land cover
+9. Soil resources**
+    * Asset account for soil resources 
+10. Other economic data**
+    * Monetary supply and use table for agricultural, forestry and fisheries products
+    * Extended production and income account for agricultural, forestry and fisheries activities
 
-**3. Fisheries products and related environmental assets**
-  * Physical flow account for fish and aquatic products
-  * Asset account for fish and other aquatic resources
-
-**4. Water resources	Asset account for water resources**
-  * Physical flow account for water abstraction
-  * Physical flow account for water distribution and use
-
-**5. Energy**
-  * Physical flow account for energy use
-
-**6. Greenhouse Gas GHG emissions**
-  * Physical flow account for GHG emissions
-  
-**7. Fertilizers, nutrient flows and pesticides**
-  * Physical flow account for fertilizers
-  * Nitrogen and phosphorous budgets[^1]
-  * Physical flow account for pesticides
-
-**8. Land**
-  * Asset account for land use
-  * Asset account for land cover
-
-**9. Soil resources**
-  * Asset account for soil resources 
-
-**10. Other economic data**
-  * Monetary supply and use table for agricultural, forestry and fisheries products
-  * Extended production and income account for agricultural, forestry and fisheries activities
-
+[^1]: Nitrogen and phosphorous budgets have been developed outside of the SEEA framework but, in essence, are a form of asset accounting for these particular elements.
 
 ## Implementation roadmap
 
