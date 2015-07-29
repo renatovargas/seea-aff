@@ -1,37 +1,47 @@
-# SEEA-AFF Guatemala
+# SEEA AFF Guatemala
 # Renato Vargas
 # https://gt.linkedin.com/in/revargas
-# SEEA-AFF Github: https://github.com/renatovargas/seea-aff
+# SEEA AFF GT Github: https://github.com/renatovargas/seea-aff
 #
-#  SEEA-AFF 01 - DATOS INICIALES
+# seea-aff-01 - Main .R file and SEEA GT data acquisition
 #
-# El SEEA-AFF tiene el objetivo general de examinar la conexión
-# entre el ambiente y las actividades económicas relacionadas con
-# la agricultura, la silvicultura y las actividades de pesca.
+# The System of Environmental-Economic Accounting for Agriculture,
+# Forestry and Fisheries (SEEA AFF) is "a statistical framework for
+# the organization of data that permits the description and analysis
+# of the relationship between the environment and the economic 
+# activities of agriculture, forestry and fisheries".
 #
-# Instalar paquetes:
+# Install packages:
 #   "RPostgreSQL" 
 #   "reshape"
 #   "plyr"
 #
-# 1. DESCARGAR DATOS DE POSTGRESQL
-# ================================
+# 1. Obtain data from SEEA database in PostgreSQL
+# ===============================================
+
+# Preamble
+
 rm(list=ls())
 library(RPostgreSQL)
-drv <- dbDriver("PostgreSQL")
-con <- dbConnect(drv, dbname="naturacc_cuentas", host="78.138.104.206", port="5432", user="naturacc_onil", password="onilidb1234")
 
-# Chequear la conexion
+# PostgreSQL data connection
+
+drv <- dbDriver("PostgreSQL")
+con <- dbConnect(drv, dbname="naturacc_cuentas", 
+host="78.138.104.206", port="5432", user="naturacc_onil", 
+password="onilidb1234")
+
+# Check the connection
 
 dbListConnections(drv)
 dbGetInfo(drv)
 summary(con)
 
-# Ver las tablas disponibles
+# List available tables
 
 dbListTables(con)
 
-# En el caso de la bd del SCAE:
+# For Guatemala:
 #
 # [1] "naeg59"           "cuenconas"       "capa1"       "ggrn_dep"       
 # [5] "npg227"           "ntt"             "topology"       "layer"          
@@ -50,31 +60,32 @@ dbListTables(con)
 # [57] "cgen"            "cta_gc"          "cta0"          "cta_gl"         
 # [61] "niv1"            "cuentas"         "unidades"    
 #
-# Obtenemos las bases de datos:
-# "scn"       : Oferta y utilizacion monetaria.
-# "scae"      : Contabilidad ambiental.
-# "scaeemis"  : Emisiones de gases efecto invernadero.
-# "scaeresid" : Residuos.
+# Get the tables:
+# "scn"       : Monetary value added, supply and use.
+# "scae"      : System of Environmental and Economic Accounts.
+# "scaeemis"  : Greenhouse gas emission data.
+# "scaeresid" : Waste data.
 
 scn       <- dbReadTable(con, "scn")
 scae      <- dbReadTable(con, "scae")   
 scaeemis  <- dbReadTable(con, "scaeemis")
 scaeresid <- dbReadTable(con, "scaeresid")
 
-# Por el momento dejamos las tablas de definiciones en el servidor.
+# For now we leave classification definitions on the server.
 
-# Cerrar la conexion para liberar recursos y el servidor.
+# Close the connection to free resources locally and in the server.
 
 dbDisconnect(con)
 dbUnloadDriver(drv)
 rm("con")
 rm("drv")
 
-# Por ultimo chequeamos la integridad de las tablas:
+# First few observations of the tables for basic check:
 
 head(scn)
 head(scae)
 head(scaeemis)
 head(scaeresid)
 
-# Vaciar el area de trabajo antes de salir
+# Remember to empty workspace before ending the session (uncomment).
+# rm(list=ls())
