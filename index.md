@@ -22,7 +22,8 @@ _Repository created and mantained by [Renato Vargas](https://gt.linkedin.com/in/
 
 | File | Description |
 |---|---|
-| [**seea-aff-00.R**](https://github.com/renatovargas/seea-aff/blob/master/scripts/seea-aff-00.R) | Connect to Guatemalan SEEA database and load tables into R. |
+| [**0_00-main.R**](https://github.com/renatovargas/seea-aff/blob/master/scripts/seea-aff-00.R) | Connect to Guatemalan SEEA database and load tables into R. |
+| [**4_01-physical_crops.R**](https://github.com/renatovargas/seea-aff/blob/master/scripts/4_01-physical_crops.R) | Build table 4.01. Physical flow account for crops. |
 
 **Datasets (Excel, SPSS, CSV, etc.)**
 
