@@ -12,11 +12,7 @@ pandoc -f markdown -t html5 -s index.md --toc -o index.html
 
 _Repository created and mantained by [Renato Vargas](https://gt.linkedin.com/in/revargas) for the Guatemalan System of Environmental and Economic Accounts (SEEA), with support from the Wealth Accounting and the Valuation of Ecosystem Services [(WAVES)](http://www.wavespartnership.org) initiative._
 
-## Downloads
-
-||
-|:---:|
-| Explore and download the project files, including this page, on [GitHub](https://github.com/renatovargas/seea-aff).|    
+## Downloads  
 
 **Documentation**.
 
@@ -24,12 +20,14 @@ _Repository created and mantained by [Renato Vargas](https://gt.linkedin.com/in/
 | --- | :---: |
 | [SEEA AFF Assessment Template for Guatemala](/seea-aff/site/en/assessment.html)  | [HTML](/seea-aff/site/en/assessment.html) / [PDF](/seea-aff/docs/assessment.pdf)  |
 
-**Information processing scripts (R, PostgreSQL, etc.)**
+**Information processing scripts (R, PostgreSQL, etc.)[^GH]**
 
 | File | Description |
 |---|---|
 | [**0_00-main.R**](https://github.com/renatovargas/seea-aff/blob/master/scripts/seea-aff-00.R) | Connect to Guatemalan SEEA database and load tables into R. |
 | [**4_01-physical_crops.R**](https://github.com/renatovargas/seea-aff/blob/master/scripts/4_01-physical_crops.R) | Build table 4.01. Physical flow account for crops. |
+
+[^GH]: Explore and download the project files, including this page, on [GitHub](https://github.com/renatovargas/seea-aff).
 
 **Datasets (Excel, SPSS, CSV, etc.)**
 
