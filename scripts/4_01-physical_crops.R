@@ -81,10 +81,10 @@ rm("drv")
 
 sup$product <- factor(sup$product, levels=unique(sup$product))
 table0401a <- as.table(xtabs(physical ~., data=sup))
-colnames(table0401) <- c("Agriculture Industry", "Imports")
+colnames(table0401a) <- c("Agriculture Industry", "Imports")
 # Write it out for the report:
 # "latin1" is a better encoding to quickly open with Excel
-write.csv(xt, "table0401.csv", fileEncoding = "latin1")
+write.csv(table0401a, "table0401a.csv", fileEncoding = "latin1")
 
 # We leave utf-8 commented out just in case
 #write.csv(xt, "table0401.csv", fileEncoding = "UTF-8")
