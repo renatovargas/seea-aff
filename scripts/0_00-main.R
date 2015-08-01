@@ -24,7 +24,66 @@
 rm(list=ls())
 library(RPostgreSQL)
 
-# PostgreSQL data connection
+# EXAMPLE 1. EXTRACT THE MONETARY TABLE WITH NAMES FOR ONE YEAR
+# =================================================================
+
+# Connect to database
+drv <- dbDriver("PostgreSQL")
+con <- dbConnect(drv, dbname="naturacc_cuentas", 
+host="78.138.104.206", port="5432", user="naturacc_onil", 
+password="onilidb1234")
+
+# Query database
+# We are interested in the output in tonnes for all 
+# agricultural products.
+
+phsupply <- dbGetQuery(con, 
+"SELECT
+  scn.ann AS year, 
+  flujos.nombre AS flow,
+  scn.npg AS npg,
+  npg336.producto AS product,
+  scn.naeg, 
+  naeg100.actividad AS industry,
+  ntg20.trans AS transaction,
+  ntt.nombre AS ntt,
+  scn.datocou AS value,
+  scn.dimfisico AS dimcode,
+  unidades.nombre AS dimension,
+  scn.datofisico AS physical
+FROM scn
+LEFT JOIN cuentas
+  ON scn.cuenta = cuentas.id
+LEFT JOIN flujos
+  ON scn.flujo = flujos.id
+LEFT JOIN npg336
+  ON scn.npg = npg336.cod
+LEFT JOIN naeg100
+  ON scn.naeg = naeg100.cod
+LEFT JOIN ntg20
+  ON scn.ntg = ntg20.cod
+LEFT JOIN ntt
+  ON scn.ntt = ntt.id
+LEFT JOIN unidades
+  ON scn.dimfisico = unidades.id
+WHERE
+     scn.ann = 2010
+AND
+     scn.npg BETWEEN 10100 AND 129900
+AND
+     scn.flujo = 1
+AND
+     (scn.ntg = 6001 
+OR
+     scn.ntg = 6010)
+ORDER BY
+     scn.npg;");
+
+dbDisconnect(con)
+dbUnloadDriver(drv)
+rm("con")
+rm("drv")
+ PostgreSQL data connection
 
 drv <- dbDriver("PostgreSQL")
 con <- dbConnect(drv, dbname="naturacc_cuentas", 
