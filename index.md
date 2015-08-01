@@ -22,7 +22,7 @@ _Repository created and mantained by [Renato Vargas](https://gt.linkedin.com/in/
 
 | Document | Access/Download |
 | --- | :---: |
-| [SEEA AFF Assessment Template for Guatemala](/seea-aff/site/en/assessment.html)  | [HTML](/seea-aff/site/en/assessment.html) / PDF  |
+| [SEEA AFF Assessment Template for Guatemala](/seea-aff/site/en/assessment.html)  | [HTML](/seea-aff/site/en/assessment.html) / [PDF](/seea-aff/docs/assessment.pdf)  |
 
 **Information processing scripts (R, PostgreSQL, etc.)**
 
