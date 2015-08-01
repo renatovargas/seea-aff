@@ -1,5 +1,5 @@
 ---
-title: SEEA-AFF Guatemala 
+title: SEEA AFF Guatemala 
 css: stylesheets/main.css
 ---
 
