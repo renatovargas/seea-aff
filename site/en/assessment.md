@@ -3,7 +3,7 @@ title: SEEA AFF Assessment Template
 css: ../stylesheets/main.css
 ---
 
-[[English]](/seea-aff/en/assessment.html)  [Español]
+[[English]](/seea-aff/site/en/assessment.html)  [Español]
 
 | **FAO Statistical Division** |
 |:---:|

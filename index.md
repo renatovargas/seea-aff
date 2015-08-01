@@ -18,6 +18,12 @@ _Repository created and mantained by [Renato Vargas](https://gt.linkedin.com/in/
 |:---:|
 | Explore and download the project files, including this page, on [GitHub](https://github.com/renatovargas/seea-aff).|    
 
+**Documentation**.
+
+| Document | Access/Download |
+| --- | :---: |
+| [SEEA AFF Assessment Template for Guatemala](/seea-aff/site/en/assessment.html)  | [HTML](/seea-aff/site/en/assessment.html) / PDF  |
+
 **Information processing scripts (R, PostgreSQL, etc.)**
 
 | File | Description |
@@ -27,7 +33,7 @@ _Repository created and mantained by [Renato Vargas](https://gt.linkedin.com/in/
 
 **Datasets (Excel, SPSS, CSV, etc.)**
 
-**Documentation (HTMl, docx, pptx, pdf)**
+_Forthcoming._
 
 ## Introduction
 
