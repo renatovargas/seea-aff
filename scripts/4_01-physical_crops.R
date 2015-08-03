@@ -18,23 +18,23 @@
 # I. PREAMBLE 
 # ===========
 
+# Read instalation instructions for your system and install packages
+# "RpostgreSQL":
+# https://cran.r-project.org/web/packages/RPostgreSQL/index.html
+# and "openxlsx":
+# https://cran.r-project.org/web/packages/openxlsx/index.html 
+# For "openxlsx" make sure you install "Rtools.exe" under Windows
+# https://cran.r-project.org/bin/windows/Rtools/
+# Other OSs Rtools not necessary.
+
+library("RPostgreSQL")
+library("openxlsx")
+
 # Clean work area
 rm(list=ls())
 
 # It's good to know where you are
 currentdir <- getwd()
-
-# Check and install packages if they aren't, and load them:
-# + "RPostgreSQL" 
-# + "reshape"
-# + "plyr"
-if("RPostgreSQL" %in% rownames(installed.packages()) == FALSE) {install.packages("RPostgreSQL")}
-if("reshape" %in% rownames(installed.packages()) == FALSE) {install.packages("reshape")}
-if("plyr" %in% rownames(installed.packages()) == FALSE) {install.packages("plyr")}
-if("xlsx" %in% rownames(installed.packages()) == FALSE) {install.packages("xlsx")}
-
-library("RPostgreSQL", "reshape")
-library("xlsx")
 
 
 # II. SUPPLY TABLE
@@ -47,6 +47,10 @@ drv <- dbDriver("PostgreSQL")
 con <- dbConnect(drv, dbname="naturacc_cuentas", 
 host="78.138.104.206", port="5432", user="naturacc_onil", 
 password="onilidb1234")
+
+# In order to avoid accented character encoding issues on Windows,
+# Windows users uncomment next line / Linux and Mac users comment it out with #
+postgresqlpqExec(con, "SET client_encoding = 'windows-1252'");
 
 # Query database
 # We are interested in the output in tonnes for all 
@@ -86,9 +90,11 @@ table0401a <- as.table(xtabs(physical ~., data=sup))
 colnames(table0401a) <- c("Agriculture Industry", "Imports")
 # Write it out for the report:
 
-# "latin1" is a better encoding to quickly open with Excel
-# write.xlsx2(table0401a, "table0401a.xlsx", sheetName="table 4.01", encoding = "latin1")
-write.csv(table0401a, "table0401a.csv")
+write.xlsx2(table0401a, "table0401a.xlsx", sheetName="table 4.01", encoding = "latin1")
+
+# If you don't want an Excel file and prefer a Comma Separated Values file,
+# uncomment next line
+#write.csv(table0401a, "table0401a.csv")
 
 # We leave utf-8 commented out just in case
 #write.csv(xt, "table0401.csv", fileEncoding = "UTF-8")
