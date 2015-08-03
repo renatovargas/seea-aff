@@ -98,7 +98,7 @@ write.xlsx(table0401a, "table0401a.xlsx", sheetName="table 4.01", encoding = "la
 #write.csv(xt, "table0401.csv", fileEncoding = "UTF-8")
 
 # Where is it?
-paste("Check out your file at: ",wd,"/supplyUse.xlsx.", " Enjoy!", sep = "")
+paste("Check out your file at: ",wd,"/table0401a.xlsx.", " Enjoy!", sep = "")
 
 
 # III. USE TABLE
