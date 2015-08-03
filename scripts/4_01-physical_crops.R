@@ -90,13 +90,11 @@ table0401a <- as.table(xtabs(physical ~., data=sup))
 colnames(table0401a) <- c("Agriculture Industry", "Imports")
 # Write it out for the report:
 
-write.xlsx2(table0401a, "table0401a.xlsx", sheetName="table 4.01", encoding = "latin1")
+write.xlsx(table0401a, "table0401a.xlsx", sheetName="table 4.01", encoding = "latin1")
 
 # If you don't want an Excel file and prefer a Comma Separated Values file,
-# uncomment next line
+# uncomment either of the next files, depending on the wished Encoding
 #write.csv(table0401a, "table0401a.csv")
-
-# We leave utf-8 commented out just in case
 #write.csv(xt, "table0401.csv", fileEncoding = "UTF-8")
 
 
