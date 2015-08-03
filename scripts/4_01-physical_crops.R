@@ -97,6 +97,9 @@ write.xlsx(table0401a, "table0401a.xlsx", sheetName="table 4.01", encoding = "la
 #write.csv(table0401a, "table0401a.csv")
 #write.csv(xt, "table0401.csv", fileEncoding = "UTF-8")
 
+# Where is it?
+paste("Check out your file at: ",wd,"/supplyUse.xlsx.", " Enjoy!", sep = "")
+
 
 # III. USE TABLE
 # ==============
