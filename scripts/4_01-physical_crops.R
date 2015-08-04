@@ -59,18 +59,44 @@ postgresqlpqExec(con, "SET client_encoding = 'windows-1252'");
 # This query extracts the information that we need:
 sup <- dbGetQuery(con, 
 "SELECT
-  npg336.producto AS product,
-  ntg20.trans AS transaction,
-  scn.datofisico AS physical
+    scn.npg as npg,
+    npg336.producto as product,
+    scn.naeg as naeg,
+    naeg100.actividad as industry,
+    scn.ntg as ntg,
+    ntg20.trans as transaction,
+	CASE 
+		WHEN 
+			scn.naeg BETWEEN 110 AND 750
+		AND
+			scn.ntg = 6001
+		THEN 	'1. Agricultural Industry'
+		WHEN
+			scn.naeg BETWEEN 810 AND 5910
+		AND
+			scn.ntg = 6001
+		THEN	'2. Manufacturing and other Industry'
+		WHEN
+			scn.naeg = 0
+		AND
+			scn.ntg = 6010
+		THEN 	'3. Imports'
+		ELSE 'Other'
+    END as seeaaff,
+    scn.datofisico AS physical
 FROM scn
 LEFT JOIN npg336
   ON scn.npg = npg336.cod
 LEFT JOIN ntg20
   ON scn.ntg = ntg20.cod
+LEFT JOIN naeg100
+  ON scn.naeg = naeg100.cod
 WHERE
      scn.ann = 2010
 AND
-     scn.npg BETWEEN 10100 AND 129900
+	(scn.npg BETWEEN 10100 AND 129900
+OR
+	scn.npg BETWEEN 220100 AND 280100)
 AND
      scn.flujo = 1
 AND
@@ -86,89 +112,48 @@ rm("con")
 rm("drv")
 
 sup$product <- factor(sup$product, levels=unique(sup$product))
-table0401a <- as.table(xtabs(physical ~., data=sup))
-colnames(table0401a) <- c("Agriculture Industry", "Imports")
+table0401a <- as.table(xtabs(physical ~ product + seeaaff, data=sup))
+table0401a <- addmargins(table0401a)
+colnames(table0401a)[4] <- "Total Supply"
+
 # Write it out for the report:
 
-write.xlsx(table0401a, "table0401a.xlsx", sheetName="table 4.01", encoding = "latin1")
+#write.xlsx(table0401a, "table0401a.xlsx", sheetName="table 4.01", encoding = "latin1")
 
 # If you don't want an Excel file and prefer a Comma Separated Values file,
 # uncomment either of the next files, depending on the wished Encoding
 #write.csv(table0401a, "table0401a.csv")
 #write.csv(xt, "table0401.csv", fileEncoding = "UTF-8")
 
+# III. USE TABLE
+# ==============
+# Forthcoming 
+
+wb <- createWorkbook("My name here")
+## Add a worksheets
+addWorksheet(wb, "Table 4.01")
+##write data to worksheet 1
+writeData(wb, sheet = 1, table0401a, rowNames = TRUE, startRow = 2)
+
+## create and add a style to the column headers
+headerStyle <- createStyle(border="TopBottom", borderStyle ="medium", fontName="Arial Narrow", fontSize=10, textDecoration = "bold")
+addStyle(wb, sheet = 1, headerStyle, rows = 2:2, cols = 1:5, gridExpand = TRUE)
+
+## style for body
+bodyStyle <- createStyle(numFmt="COMMA", fontName="Arial Narrow", fontSize=10)
+addStyle(wb, sheet = 1, bodyStyle, rows = 3:(dim(table0401a)[1]), cols = 2:5, gridExpand = TRUE)
+
+rowNamesStyle <- createStyle(fontName="Arial Narrow", fontSize=10)
+addStyle(wb, sheet = 1, rowNamesStyle, rows = 3:(dim(table0401a)[1]+1), cols=1, gridExpand = TRUE)
+
+footerStyle <- createStyle(numFmt="COMMA", border="TopBottom", borderStyle ="medium", fontName="Arial Narrow", fontSize=10, textDecoration = "bold")
+addStyle(wb, sheet = 1, footerStyle, rows = (dim(table0401a)[1] + 2), cols = 1:5, gridExpand = TRUE)
+setColWidths(wb, 1, cols=1:5, widths = "auto") ## set column width for row names column
+saveWorkbook(wb, "table0401a.xlsx", overwrite = TRUE)
+
+openXL("table0401a.xlsx")
+
 # Where is it?
 paste("Check out your file at: ",currentdir,"/table0401a.xlsx.", " Enjoy!", sep = "")
 
-
-# III. USE TABLE
-# ==============
-
-
-
-
-# APPENDIX 1. PostgreSQL data connection basics with R
-# ====================================================
-
-## Use package "RPostgreSQL" to connect
-## More at: https://code.google.com/p/rpostgresql/
-## https://cran.r-project.org/web/packages/RPostgreSQL/index.html
-#
-#library("RPostgreSQL")
-#drv <- dbDriver("PostgreSQL")
-#con <- dbConnect(drv, dbname="naturacc_cuentas", 
-#host="78.138.104.206", port="5432", user="naturacc_onil", 
-#password="onilidb1234")
-#
-## Check the connection
-#
-#dbListConnections(drv)
-#dbGetInfo(drv)
-#summary(con)
-#
-## List available tables
-#
-#dbListTables(con)
-#
-## For Guatemala:
-##
-## [1] "naeg59"           "cuenconas"       "capa1"       "ggrn_dep"       
-## [5] "npg227"           "ntt"             "topology"       "layer"          
-## [9] "npg9"             "spatial_ref_sys" "cuencas"        "cta2"           
-## [13] "cta1"            "naeg25"          "censo02"       "resid1"         
-## [17] "censo02"         "scae"            "scn"            "naeg8"          
-## [21] "naeg18"          "naeg100"         "flujos"        "npg336"         
-## [25] "npg67"           "npg18"           "npgm"           "ntg20"          
-## [29] "undepa"          "Munis_Segeplan"  "gpa_gc"          "depa"           
-## [33] "scaeemis"        "clasifemis"      "region"        "koppen"         
-## [37] "capa0"           "gpa_gl"          "tamanno"      "estragr"        
-## [41] "cultanuales"     "anuales"         "pibdepa"         "cgrn"           
-## [45] "ggrn_gc"         "cegi"            "ggrn_gl"         "cigg"           
-## [49] "cultpermanentes" "permanentes"     "niv1_anual"      "ntg9"           
-## [53] "cen2002"         "scaeresid"       "resid2" "munis_seg_n27"  
-## [57] "cgen"            "cta_gc"          "cta0"          "cta_gl"         
-## [61] "niv1"            "cuentas"         "unidades"    
-##
-## Relevant tables:
-## "scn"       : Monetary value added, supply and use.
-## "scae"      : System of Environmental and Economic Accounts.
-## "scaeemis"  : Greenhouse gas emission data.
-## "scaeresid" : Waste data.
-#
-## Example of how to get an entire table
-#
-#scn       <- dbReadTable(con, "scn")
-#
-## Close the connection to free resources locally and in the server.
-#
-#dbDisconnect(con)
-#dbUnloadDriver(drv)
-#rm("con")
-#rm("drv")
-#
-## First few observations of the tables for basic check:
-#
-#head(scn)
-#
-## Remember to empty workspace before ending the session (uncomment).
 #rm(list=ls())
