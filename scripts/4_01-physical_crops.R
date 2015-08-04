@@ -49,8 +49,9 @@ host="78.138.104.206", port="5432", user="naturacc_onil",
 password="onilidb1234")
 
 # In order to avoid accented character encoding issues on Windows,
-# Windows users uncomment next line / Linux and Mac users comment it out with #
-postgresqlpqExec(con, "SET client_encoding = 'windows-1252'");
+sys <- Sys.info()["sysname"]
+if(sys["sysname"] == "Windows"){
+postgresqlpqExec(con, "SET client_encoding = 'windows-1252'");} 
 
 # Query database
 # We are interested in the output in tonnes for all 
