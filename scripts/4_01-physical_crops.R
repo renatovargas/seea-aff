@@ -141,7 +141,7 @@ addStyle(wb, sheet = 1, headerStyle, rows = 2:2, cols = 1:5, gridExpand = TRUE)
 
 ## style for body
 bodyStyle <- createStyle(numFmt="COMMA", fontName="Arial Narrow", fontSize=10)
-addStyle(wb, sheet = 1, bodyStyle, rows = 3:(dim(table0401a)[1]+1), cols = 2:5, gridExpand = TRUE)
+addStyle(wb, sheet = 1, bodyStyle, rows = 3:(3+dim(table0401a)[1]), cols = 2:5, gridExpand = TRUE)
 
 rowNamesStyle <- createStyle(fontName="Arial Narrow", fontSize=10)
 addStyle(wb, sheet = 1, rowNamesStyle, rows = 3:(dim(table0401a)[1]+1), cols=1, gridExpand = TRUE)
