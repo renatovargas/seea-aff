@@ -71,18 +71,22 @@ sup <- dbGetQuery(con,
 			scn.naeg BETWEEN 110 AND 750
 		AND
 			scn.ntg = 6001
-		THEN 	'1. Agricultural Industry'
+		THEN 	'1. Agricultural Industries'
 		WHEN
 			scn.naeg BETWEEN 810 AND 5910
 		AND
 			scn.ntg = 6001
-		THEN	'2. Manufacturing and other Industry'
+		THEN	'3. Manufacturing and other Industries'
 		WHEN
 			scn.naeg = 0
 		AND
 			scn.ntg = 6010
-		THEN 	'3. Imports'
-		ELSE 'Other'
+		THEN 	'4. Imports'
+		WHEN    
+			scn.naeg=0 
+		AND
+			scn.ntg != 6010	
+		THEN	ntg20.trans
     END as seeaaff,
     scn.datofisico AS physical
 FROM scn
@@ -101,11 +105,11 @@ OR
 AND
      scn.flujo = 1
 AND
-     (scn.ntg = 6001 
+     (scn.ntg = 6001
 OR
-     scn.ntg = 6010)
+	scn.ntg = 6010)
 ORDER BY
-     scn.npg, ntg20.trans;");
+     scn.npg, seeaaff;");
 
 dbDisconnect(con)
 dbUnloadDriver(drv)
@@ -115,7 +119,8 @@ rm("drv")
 sup$product <- factor(sup$product, levels=unique(sup$product))
 table0401a <- as.table(xtabs(physical ~ product + seeaaff, data=sup))
 table0401a <- addmargins(table0401a)
-colnames(table0401a)[4] <- "Total Supply"
+#colnames(table0401a)[4] <- "Total Supply"
+#rownames(table0401a)[dim(table0401a)[1]] <- "Total"
 
 # Write it out for the report:
 
@@ -128,11 +133,131 @@ colnames(table0401a)[4] <- "Total Supply"
 
 # III. USE TABLE
 # ==============
-# Forthcoming 
 
-wb <- createWorkbook("My name here")
-## Add a worksheets
-addWorksheet(wb, "Table 4.01")
+drv <- dbDriver("PostgreSQL")
+con <- dbConnect(drv, dbname="naturacc_cuentas", 
+host="78.138.104.206", port="5432", user="naturacc_onil", 
+password="onilidb1234")
+
+# In order to avoid accented character encoding issues on Windows,
+sys <- Sys.info()["sysname"]
+if(sys["sysname"] == "Windows"){
+postgresqlpqExec(con, "SET client_encoding = 'windows-1252'");} 
+
+# Query database
+# We are interested in the use in tonnes for all 
+# agricultural products.
+
+# This query extracts the information that we need:
+use <- dbGetQuery(con, 
+"SELECT
+    scn.npg as npg,
+    npg336.producto as product,
+    scn.naeg as naeg,
+    naeg100.actividad as industry,
+    scn.ntg as ntg,
+    ntg20.trans as transaction,
+	CASE 
+		WHEN 
+			scn.naeg BETWEEN 110 AND 240
+		AND
+			scn.ntg = 6002
+		THEN 	'1. Agricultural Industries for seed'
+		WHEN
+			scn.naeg BETWEEN 310 AND 460
+		AND
+			scn.ntg = 6002
+		THEN	'2. Agricultural Industries for feed'
+		WHEN
+			scn.naeg BETWEEN 520 AND 710
+		AND	
+			scn.ntg = 6002
+		THEN	'3. Other agriculture'
+		WHEN
+			scn.naeg = 720
+		THEN	'2. Agricultural Industries for feed'
+		WHEN
+			scn.naeg BETWEEN 730 AND 750
+		AND	
+			scn.ntg = 6002
+		THEN	'3. Other Agricultural Industries'
+		WHEN
+			scn.naeg BETWEEN 810 AND 1020
+		AND	
+			scn.ntg = 6002
+		THEN	'6. Non-Food Processing Industries'
+		WHEN
+			scn.naeg BETWEEN 1110 AND 2050
+		AND	
+			scn.ntg = 6002
+		THEN	'5. Food Processing Industries'
+		WHEN
+			scn.naeg BETWEEN 2110 AND 3620
+		AND	
+			scn.ntg = 6002
+		THEN	'6. Non-Food Processing Industries'
+		WHEN
+			scn.naeg = 3710
+		THEN	'4. Energy Industries (Electricity)'
+		WHEN
+			scn.naeg BETWEEN 3810 AND 4030
+		AND	
+			scn.ntg = 6002
+		THEN	'6. Non-Food Processing Industries'
+		WHEN
+			scn.naeg BETWEEN 4110 AND 4120
+		AND	
+			scn.ntg = 6002
+		THEN	'7. Hotels and Restaurants'
+		WHEN
+			scn.naeg BETWEEN 4210 AND 5910
+		AND	
+			scn.ntg = 6002
+		THEN	'6. Non-Food Processing Industries'
+		WHEN
+			scn.naeg = 0
+		THEN 	ntg20.trans
+    END as seeaaff,
+    scn.datofisico AS physical
+FROM scn
+LEFT JOIN npg336
+  ON scn.npg = npg336.cod
+LEFT JOIN ntg20
+  ON scn.ntg = ntg20.cod
+LEFT JOIN naeg100
+  ON scn.naeg = naeg100.cod
+WHERE
+     scn.ann = 2010
+AND
+	(scn.npg BETWEEN 10100 AND 129900
+OR
+	scn.npg BETWEEN 220100 AND 280100)
+AND
+     scn.flujo = 2
+AND
+     scn.ntg BETWEEN 6002 AND 6260
+
+ORDER BY
+     scn.ntg, scn.npg;")
+
+dbDisconnect(con)
+dbUnloadDriver(drv)
+rm("con")
+rm("drv")
+
+use$product <- factor(use$product, levels=unique(use$product))
+use$seeaaff <- factor(use$seeaaff, levels=unique(use$seeaaff))
+table0401b <- as.table(xtabs(physical ~ product + seeaaff, data=use))
+table0401b <- addmargins(table0401b)
+
+
+
+# EXCEL REPORT
+# ============ 
+
+wb <- createWorkbook("SEEA AFF")
+## Add a worksheet
+addWorksheet(wb, "Table 4.01 Supply")
 ##write data to worksheet 1
 writeData(wb, sheet = 1, table0401a, rowNames = TRUE, startRow = 2)
 
@@ -140,7 +265,7 @@ writeData(wb, sheet = 1, table0401a, rowNames = TRUE, startRow = 2)
 headerStyle <- createStyle(border="TopBottom", borderStyle ="medium", fontName="Arial Narrow", fontSize=10, textDecoration = "bold")
 addStyle(wb, sheet = 1, headerStyle, rows = 2:2, cols = 1:5, gridExpand = TRUE)
 
-## style for body
+## Font style for all body
 bodyStyle <- createStyle(numFmt="COMMA", fontName="Arial Narrow", fontSize=10)
 addStyle(wb, sheet = 1, bodyStyle, rows = 3:(3+dim(table0401a)[1]), cols = 2:5, gridExpand = TRUE)
 
@@ -149,8 +274,23 @@ addStyle(wb, sheet = 1, rowNamesStyle, rows = 3:(dim(table0401a)[1]+1), cols=1, 
 
 footerStyle <- createStyle(numFmt="COMMA", border="TopBottom", borderStyle ="medium", fontName="Arial Narrow", fontSize=10, textDecoration = "bold")
 addStyle(wb, sheet = 1, footerStyle, rows = (dim(table0401a)[1] + 2), cols = 1:5, gridExpand = TRUE)
-setColWidths(wb, 1, cols=1:5, widths = "auto") ## set column width for row names column
+setColWidths(wb, 1, cols=1:5, widths = "auto") 
+
+addWorksheet(wb, "Table 4.01b Use")
+##write data to worksheet 2
+writeData(wb, sheet = 2, table0401b, rowNames = TRUE, startRow = 2)
+addStyle(wb, sheet = 2, headerStyle, rows = 2:2, cols = 1:(dim(table0401b)[2]+1), gridExpand = TRUE)
+addStyle(wb, sheet = 2, bodyStyle, rows = 3:(3+dim(table0401a)[1]), cols = 2:(dim(table0401a)[1] + 1), gridExpand = TRUE)
+addStyle(wb, sheet = 2, rowNamesStyle, rows = 3:(dim(table0401b)[1]+1), cols=1, gridExpand = TRUE)
+addStyle(wb, sheet = 2, footerStyle, rows = 2+(dim(table0401a)[1] + 1), cols = 1:(dim(table0401b)[2]+1), gridExpand = TRUE)
+setColWidths(wb, 2, cols=1:(dim(table0401b)[2]+1), widths = "auto") 
+
+## set column width for row names column
 saveWorkbook(wb, "table0401a.xlsx", overwrite = TRUE)
+
+
+
+
 
 openXL("table0401a.xlsx")
 
