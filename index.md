@@ -1,6 +1,6 @@
 ---
 title: SEEA AFF Guatemala 
-css: ../../stylesheets/main.css
+css: stylesheets/main.css
 ---
 
 <!-- 

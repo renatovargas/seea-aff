@@ -1,16 +1,18 @@
 ---
 title: SEEA AFF Assessment Template 
-css: ../stylesheets/main.css
+css: ../../stylesheets/main.css
 ---
 
 [[English]](/seea-aff/site/en/assessment.html)  [Español]
 
+
 | **FAO Statistical Division** |
 |:---:|
 | **Assessment Template (draft)** |
-| Version 1.0, April 2014 |  
+| Version 1.0, April 2014 | 
 | Authorship: Prepared with inputs from the team at [IARNA](http://www.infoiarna.org.gt). |
 | _Page updated: July 31, 2015._ |
+
 
 # Introduction
 
