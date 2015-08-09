@@ -45,25 +45,25 @@ This evaluation template and the subsequent discussion aim to carry out within t
 **2. Are there publications that include data on the agriculture, forestry and fisheries? Is there a national standard or regular sets of key indicators covering environmental, forest and and fishery issues?**
 
 * [National Agricultural Survey](http://web.maga.gob.gt/wp-content/uploads/2014/06/PP-Ena-2013.pdf), improved with support from FAO Guatemala.
-* “Agriculture in figures 2013” (MAGA) - http://web.maga.gob.gt/download/El-agro-en-cifras-small.pdf
-* National Forest Inventory
-* Map of forest cover dynamics
-* Administrative records
-* Logging licenses
-* Forest products exports
-* Fishing licenses
-* Agricultural prices- http://web.maga.gob.gt/precios-agricolas/
-* There is no national law on statistical computing
+* “Agriculture in figures” (MAGA)[2013](http://web.maga.gob.gt/download/El-agro-en-cifras-small.pdf), [2014](http://web.maga.gob.gt/download/1agro-cifras14.pdf).
+* National Forest Inventory.
+* Map of forest cover dynamics.
+* Administrative records.
+* Logging licenses (although, SEEA compilation revealed that they represent below 5%). 
+* Forest products exports.
+* Fishing licenses.
+* [Agricultural prices](http://web.maga.gob.gt/precios-agricolas/).
+* There is no national law on statistical computing.
 
 **3. What organizations and agencies play a major role in analyzing data on agricultural production and development policies?**
 
-* Ministry of Agriculture, Livestock and Food (MAGA)
-* Ministry of Planning and Programming (SEGEPLANT)
-* Secretariat for Food Security and Nutrition (SESAN)
+* Ministry of Agriculture, Livestock and Food (MAGA), through its Diplan department, and its Geographic Information Systems Unit.
+* Ministry of Planning and Programming (SEGEPLAN).
+* Secretariat for Food Security and Nutrition (SESAN).
 
-**4 .What are the main current policy frameworks relevant for the consideration of agricultural, forestry and fisheries production  and the environmental sustainability of this production?**
+**4 .What are the main current policy frameworks relevant for the consideration of agricultural, forestry and fisheries production and the environmental sustainability of this production?**
 
-* Ley Forestal (Forestry law)
+* Ley Forestal (Forestry law).
 * Política forestal de Guatemala (Guatemala Forest Policy)
 * Ley General de la Pesca y Acuicultura (Decreto 80-2002 y su Reglamento Acuerdo Gubernativo No. 223-2005)Dirección de Normatividad de la Pesca y Acuicultura (General law on Fishing and Aquaculture)
 * Reglamento de la Ley General de Pesca y Acuicultura (Regulations of the General Law on Fisheries and Aquaculture)
@@ -71,6 +71,9 @@ This evaluation template and the subsequent discussion aim to carry out within t
 
 **5. Are there established research projects in order to consider the environmental sustainability of agricultural production, forestry and fisheries? In particular, are there work programs on environmental-economic accounting / natural capital?**
 
+* Universities:
+    * [Institute of Agriculture, Natural Resources and Environment (IARNA)](http://www.infoiarna.org.gt/) of Rafael Landivar University (URL, that has led the work on the [System of Environmental and Economic Accounts (SEEA)](http://www.infoiarna.org.gt/index.php/cuentas-ambientales). This system has been formalized and it is being used to take into account information on natural resources in making economic decisions. This effort is led by the Ministry of Planning and Programming of the Presidency (SEGEPLAN) in collaboration with the Bank of Guatemala (BANGUAT)), the Ministry of Finance (MINFIN) and the National Institute of Statistics (INE). The IARNA provides all technical support to this effort. This activity is part of the initiative [Wealth Accounting and the Valuation of Ecosystem Services (WAVES)](https://www.wavespartnership.org/).
+    * [Faculty of Agronomy of the University of San Carlos of Guatemala](http://fausac.usac.edu.gt), mainly through students' thesis.
 * Although the National Fund for Science and Technology (Fondo Nacional de Ciencia y Tecnología , FONACYT) promotes agricultural research, the country does not have a research agenda that considers the environmental sustainability of agricultural production, forestry and fisheries. 
 * Research in these three areas is developed by the public sector, private sector, and some universities and NGOs.  However research is carried out without collaboration among the different institutes.
 * Information on  R & D for agriculture can be found at:
@@ -80,10 +83,7 @@ http://www.asti.cgiar.org/guatemala
   * [The Private Research Institute on Climate Change (ICC)](Http://www.icc.org.gt/?PAGE=1) mission is to develop and promote actions and processes that facilitate mitigation and adaptation to climate change in the region basing on technical and scientific guidelines."
 * Even if with diminished capacity, research from the public sector is carried out by the [Agricultural Science and Technology Institute (ICTA)](http://www.icta.gob.gt/)
 * The [National Institute of Forests (INAB)](http://www.inab.gob.gt/Paginas%20web/Investigacion.aspx) carries out a research program which is administered by the Department of Forest Research 
-* Universities:
-    * [Faculty of Agronomy of the University of San Carlos of Guatemala](http://fausac.usac.edu.gt), mainly through students' thesis.
-    * [Institute of Agriculture, Natural Resources and Environment (IARNA)](http://www.infoiarna.org.gt/) of Rafael Landivar University (URL, that has led the work on the [System of Environmental and Economic Accounts (SEEA)](http://www.infoiarna.org.gt/index.php/cuentas-ambientales). 
-* This system has been formalized and it is being used to take into account information on natural resources in making economic decisions. This effort is led by the Ministry of Planning and Programming of the Presidency (SEGEPLAN) in collaboration with the Bank of Guatemala (BANGUAT)), the Ministry of Finance (MINFIN) and the National Institute of Statistics (INE). The IARNA provides all technical support to this effort. This activity is part of the initiative [Wealth Accounting and the Valuation of Ecosystem Services (WAVES)](https://www.wavespartnership.org/).
+
 
 # Key data domains
 
