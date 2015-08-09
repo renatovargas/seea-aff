@@ -4,7 +4,7 @@
 # SEEA AFF GT Github: https://github.com/renatovargas/seea-aff#
 
 # ------------------------------------------------------------------
-#        TABLE 4.1 PHYSICAL FLOW ACCOUNT FOR CROPS
+#        TABLE 4.2 PHYSICAL FLOW ACCOUNT FOR LIVESTOCK
 # ------------------------------------------------------------------
 
 # Comments start with #
@@ -99,9 +99,9 @@ LEFT JOIN naeg100
 WHERE
      scn.ann = 2010
 AND
-	(scn.npg BETWEEN 10100 AND 129900
+	(scn.npg BETWEEN 130100 AND 149900
 OR
-	scn.npg BETWEEN 220100 AND 280100)
+	scn.npg BETWEEN 200100 AND 209900)
 AND
      scn.flujo = 1
 AND
@@ -229,9 +229,9 @@ LEFT JOIN naeg100
 WHERE
      scn.ann = 2010
 AND
-	(scn.npg BETWEEN 10100 AND 129900
+	(scn.npg BETWEEN 130100 AND 149900
 OR
-	scn.npg BETWEEN 220100 AND 280100)
+	scn.npg BETWEEN 200100 AND 209900)
 AND
      scn.flujo = 2
 AND
@@ -257,7 +257,7 @@ table0401b <- addmargins(table0401b)
 
 wb <- createWorkbook("SEEA AFF")
 ## Add a worksheet
-addWorksheet(wb, "4.01 Crops Sup")
+addWorksheet(wb, "4.02 Livestock Supply")
 ##write data to worksheet 1
 writeData(wb, sheet = 1, table0401a, rowNames = TRUE, startRow = 2)
 
@@ -278,25 +278,25 @@ setColWidths(wb, 1, cols=1:5, widths = "auto")
 
 
 
-addWorksheet(wb, "4.01 Crops Use")
+addWorksheet(wb, "4.02 Livestock Use")
 ##write data to worksheet 2
 writeData(wb, sheet = 2, table0401b, rowNames = TRUE, startRow = 2)
 addStyle(wb, sheet = 2, headerStyle, rows = 2:2, cols = 1:(dim(table0401b)[2]+1), gridExpand = TRUE)
 addStyle(wb, sheet = 2, bodyStyle, rows = 3:(3+dim(table0401a)[1]), cols = 2:(dim(table0401a)[1] + 1), gridExpand = TRUE)
 addStyle(wb, sheet = 2, rowNamesStyle, rows = 3:(dim(table0401b)[1]+1), cols=1, gridExpand = TRUE)
-addStyle(wb, sheet = 2, footerStyle, rows = 2+(dim(table0401a)[1] + 1), cols = 1:(dim(table0401b)[2]+1), gridExpand = TRUE)
+addStyle(wb, sheet = 2, footerStyle, rows = 1+(dim(table0401a)[1] + 1), cols = 1:(dim(table0401b)[2]+1), gridExpand = TRUE)
 setColWidths(wb, 2, cols=1:(dim(table0401b)[2]+1), widths = "auto") 
 
 ## set column width for row names column
-saveWorkbook(wb, "table0401a.xlsx", overwrite = TRUE)
+saveWorkbook(wb, "table0402.xlsx", overwrite = TRUE)
 
 
 
 
 
-openXL("table0401a.xlsx")
+openXL("table0402.xlsx")
 
 # Where is it?
-paste("Check out your file at: ",currentdir,"/table0401a.xlsx.", " Enjoy!", sep = "")
+paste("Check out your file at: ",currentdir,"/table04002.xlsx.", " Enjoy!", sep = "")
 
 #rm(list=ls())
