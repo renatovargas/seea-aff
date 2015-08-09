@@ -10,9 +10,9 @@ pandoc -f markdown -t html5 -s index.md --toc -o index.html
 
 [[English]](/seea-aff)  [[Español]](/seea-aff/index_es.html) 
 
-_Repository created and mantained by [Renato Vargas](https://gt.linkedin.com/in/revargas) for the Guatemalan System of Environmental and Economic Accounts (SEEA), with support from the Wealth Accounting and the Valuation of Ecosystem Services [(WAVES)](http://www.wavespartnership.org) initiative.
+_Repository created and mantained by [Renato Vargas](https://gt.linkedin.com/in/revargas) for the Guatemalan System of Environmental and Economic Accounts (SEEA), with support from the Wealth Accounting and the Valuation of Ecosystem Services [(WAVES)](http://www.wavespartnership.org) initiative._
 
-Last updated: August 8, 2015._
+_Last updated: August 8, 2015._
 
 ## Downloads  
 
