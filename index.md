@@ -10,7 +10,9 @@ pandoc -f markdown -t html5 -s index.md --toc -o index.html
 
 [[English]](/seea-aff)  [[Español]](/seea-aff/index_es.html) 
 
-_Repository created and mantained by [Renato Vargas](https://gt.linkedin.com/in/revargas) for the Guatemalan System of Environmental and Economic Accounts (SEEA), with support from the Wealth Accounting and the Valuation of Ecosystem Services [(WAVES)](http://www.wavespartnership.org) initiative._
+_Repository created and mantained by [Renato Vargas](https://gt.linkedin.com/in/revargas) for the Guatemalan System of Environmental and Economic Accounts (SEEA), with support from the Wealth Accounting and the Valuation of Ecosystem Services [(WAVES)](http://www.wavespartnership.org) initiative.
+
+Last updated: August 8, 2015._
 
 ## Downloads  
 
@@ -24,8 +26,9 @@ _Repository created and mantained by [Renato Vargas](https://gt.linkedin.com/in/
 
 | File | Description |
 |---|---|
-| [**0_00-main.R**](https://github.com/renatovargas/seea-aff/blob/master/scripts/seea-aff-00.R) | Connect to Guatemalan SEEA database and load tables into R. |
-| [**4_01-physical_crops.R**](https://github.com/renatovargas/seea-aff/blob/master/scripts/4_01-physical_crops.R) | Build table 4.01. Physical flow account for crops. |
+| [4_01-physical_crops.R](https://github.com/renatovargas/seea-aff/blob/master/scripts/4_01-physical_crops.R) | Build table 4.01. Physical flow account for crops. |
+| [4_02-physical_livestock.R](https://github.com/renatovargas/seea-aff/blob/master/scripts/4_02-physical_livestock.R) | Build table 4.02. Physical flow account for livestock. |
+
 
 [^GH]: Explore and download the project files, including this page, on [GitHub](https://github.com/renatovargas/seea-aff).
 
