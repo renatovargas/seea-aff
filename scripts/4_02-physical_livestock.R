@@ -255,7 +255,7 @@ table0401b <- addmargins(table0401b)
 # EXCEL REPORT
 # ============ 
 
-wb <- createWorkbook("SEEA AFF")
+wb <- createWorkbook("SEEA AFF Guatemala")
 ## Add a worksheet
 addWorksheet(wb, "4.02 Livestock Supply")
 ##write data to worksheet 1
