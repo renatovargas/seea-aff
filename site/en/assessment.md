@@ -3,22 +3,21 @@ title: SEEA AFF Assessment Template
 css: ../../stylesheets/main.css
 ---
 
-[[English]](/seea-aff/site/en/assessment.html)  [Español]
+[[English]](/seea-aff/site/en/assessment.html)  \[Español\] 
 
-
-| **FAO Statistical Division** |
-|:---:|
-| **Assessment Template (draft)** |
-| Version 1.0, April 2014 | 
-| Authorship: Prepared with inputs from the team at [IARNA](http://www.infoiarna.org.gt). |
-| _Page updated: July 31, 2015._ |
+ | **FAO Statistical Division** |
+ | --- |
+ | **Assessment Template (draft)** |
+ | Version 1.0, April 2014 |
+ | Authorship: Prepared with inputs from the team at [IARNA](http://www.infoiarna.org.gt). |
+ | _Page updated: July 31, 2015._ |
 
 
 # Introduction
 
 This paper aims to provide a structure for discussion and evaluation of national capability of compiling information compliant with the SEEA-AGRI for the purpose of assessing the environmental sustainability of agriculture, forestry and fisheries.
 
-The template starts with a number of questions about the collection and the organization of agriculture, forestry and fishing data and the relevant istitutions and their priorities.
+The template starts with a number of questions about the collection and the organization of agriculture, forestry and fishing data and the relevant institutions and their priorities.
 Then, for each of the nine major data domains of the SEEA Agri, the template records a number of questions. These should allow an overview of the capability to compile the SEEA-Agri accounts.
 The questions on each domain should be considered in conjunction with the  draft tables as designed by FAO staff. Questions are designed to find answers for those data that are available within a country. There is no expectation that each cell in each table is relevant to a single country or that a single agency or department could contain all the data in the scope of SEEA-Agri. Therefore, the answers to the questions require discussion and participation of agencies and experts to determine data relevance and availability.
 
