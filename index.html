@@ -28,11 +28,10 @@
 Compile with Pandoc:
 pandoc -f markdown -t html5 -s index.md --toc -o index.html 
 -->
-
 <p><a href="/seea-aff">[English]</a> <a href="/seea-aff/index_es.html">[Español]</a></p>
 <p><em>Repository created and mantained by <a href="https://gt.linkedin.com/in/revargas">Renato Vargas</a> for the Guatemalan System of Environmental and Economic Accounts (SEEA), with support from the Wealth Accounting and the Valuation of Ecosystem Services <a href="http://www.wavespartnership.org">(WAVES)</a> initiative.</em></p>
 <p><em>Last updated: August 8, 2015.</em></p>
-<h2 id="downloads"><a href="#downloads">Downloads</a></h2>
+<h2 id="downloads">Downloads</h2>
 <p><strong>Documentation</strong>.</p>
 <table>
 <thead>
@@ -43,6 +42,10 @@ pandoc -f markdown -t html5 -s index.md --toc -o index.html
 </thead>
 <tbody>
 <tr class="odd">
+<td style="text-align: left;"><a href="/seea-aff/site/en/outline.html">SEEA AFF Guatemala Report Outline</a></td>
+<td style="text-align: center;"><a href="/seea-aff/site/en/outline.html">HTML</a> / <a href="/seea-aff/docs/outline.pdf">PDF</a></td>
+</tr>
+<tr class="even">
 <td style="text-align: left;"><a href="/seea-aff/site/en/assessment.html">SEEA AFF Assessment Template for Guatemala</a></td>
 <td style="text-align: center;"><a href="/seea-aff/site/en/assessment.html">HTML</a> / <a href="/seea-aff/docs/assessment.pdf">PDF</a></td>
 </tr>
@@ -69,13 +72,13 @@ pandoc -f markdown -t html5 -s index.md --toc -o index.html
 </table>
 <p><strong>Datasets (Excel, SPSS, CSV, etc.)</strong></p>
 <p><em>Forthcoming.</em></p>
-<h2 id="introduction"><a href="#introduction">Introduction</a></h2>
+<h2 id="introduction">Introduction</h2>
 <p>The <strong>System of Environmental and Economic Accounts of Guatemala (SEEA GT)</strong> adds a new member to its existing family of analytical frameworks. A new manual called <a href="http://unstats.un.org/unsd/envaccounting/aff/chapterList.asp">System of Environmental-Economic Accounting for Agriculture, Forestry and Fisheries (SEEA AFF)</a> is being developed with support from FAO. It is &quot;a statistical framework for the organization of data that permits the description and analysis of the relationship between the environment and the economic activities of agriculture, forestry and fisheries&quot;.</p>
 <p>The <a href="https://github.com/renatovargas/seea-aff"><strong>seea-aff</strong></a> repository is a collection of files which allow for a pilot compilation of the SEEA-AFF for Guatemala. It has the dual purpose of documenting the compilation efforts and contributing techniques that can help other countries replicate the exercise with their own data or globally available datasets.</p>
 <p>The point of departure for this exercise is the SEEA-GT PostgreSQL database (<strong>naturacc_cuentas</strong>) developed by José Miguel Barrios, with support from the WAVES initiative. We build on top of it, using information from other sources.</p>
-<h2 id="objective"><a href="#objective">Objective</a></h2>
+<h2 id="objective">Objective</h2>
 <p>According to the <a href="http://unstats.un.org/unsd/envaccounting/aff/GC_Draft.pdf">draft manual</a>, the SEEA AFF has the objective of examining the connection between economic activity and the environment. Its scope covers agricultural, forestry and fisheries activities as defined in the <a href="http://unstats.un.org/unsd/cr/registry/default.asp?Lg=3">International Standard Industrial Clasification (ISIC)</a>, section <a href="http://unstats.un.org/unsd/cr/registry/regcs.asp?Cl=27&amp;Lg=1&amp;Co=A">A</a>, divisions <a href="http://unstats.un.org/unsd/cr/registry/regcs.asp?Cl=27&amp;Lg=1&amp;Co=01">01</a>, <a href="http://unstats.un.org/unsd/cr/registry/regcs.asp?Cl=27&amp;Lg=1&amp;Co=02">02</a> y <a href="http://unstats.un.org/unsd/cr/registry/regcs.asp?Cl=27&amp;Lg=1&amp;Co=03">03</a>. The purpose of this coverage of three different types of activity is to facilitate understanding and analysis of the trade-offs and dependencies between these activities that should be considered as part of national and local level planning.</p>
-<h2 id="scope"><a href="#scope">Scope</a></h2>
+<h2 id="scope">Scope</h2>
 <p>The draft SEEA AFF has the following data domains and base accounts:</p>
 <ol type="1">
 <li><strong>Agricultural products and related environmental assets</strong>
@@ -131,7 +134,7 @@ pandoc -f markdown -t html5 -s index.md --toc -o index.html
 <li>Extended production and income account for agricultural, forestry and fisheries activities</li>
 </ul></li>
 </ol>
-<h2 id="implementation-roadmap"><a href="#implementation-roadmap">Implementation roadmap</a></h2>
+<h2 id="implementation-roadmap">Implementation roadmap</h2>
 <p>The SEEA AFF Guatemala pilot exercise has been prepared in the month of August 2015, under the following principles:</p>
 <ol type="1">
 <li>SEEA-AFF Guatemala compilation is replicable.</li>
