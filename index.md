@@ -12,16 +12,25 @@ pandoc -f markdown -t html5 -s index.md --toc -o index.html
 
 _Repository created and mantained by [Renato Vargas](https://gt.linkedin.com/in/revargas) for the Guatemalan System of Environmental and Economic Accounts (SEEA), with support from the Wealth Accounting and the Valuation of Ecosystem Services [(WAVES)](http://www.wavespartnership.org) initiative._
 
-_Last updated: August 8, 2015._
+_Last updated: August 11, 2015._
 
 ## Downloads  
+
+**Tables and data sets**
+
+| Description | Access/Download |
+| --- | :---: |
+| [4.01. Physical flow account for crops](./data/table0401.html)  | [HTML](./data/table0401.html) / [Excel](./data/table0401.xlsx)  |
+| [4.02. Physical flow account for livestock](./data/table0402.html)  | [HTML](./data/table0402.html) / [Excel](./data/table0402.xlsx)  |
+
 
 **Documentation**.
 
 | Document | Access/Download |
 | --- | :---: |
-| [SEEA AFF Guatemala Report Outline](/seea-aff/site/en/outline.html)  | [HTML](/seea-aff/site/en/outline.html) / [PDF](/seea-aff/docs/outline.pdf)  |
-| [SEEA AFF Assessment Template for Guatemala](/seea-aff/site/en/assessment.html)  | [HTML](/seea-aff/site/en/assessment.html) / [PDF](/seea-aff/docs/assessment.pdf)  |
+| [SEEA AFF Guatemala Report Outline](./site/en/outline.html)  | [HTML](./site/en/outline.html) / [PDF](./docs/outline.pdf)  |
+| [SEEA AFF Assessment Template for Guatemala](./site/en/assessment.html)  | [HTML](./site/en/assessment.html) / [PDF](./docs/assessment.pdf)  |
+
 
 **Information processing scripts (R, PostgreSQL, etc.)[^GH]**
 
@@ -33,9 +42,6 @@ _Last updated: August 8, 2015._
 
 [^GH]: Explore and download the project files, including this page, on [GitHub](https://github.com/renatovargas/seea-aff).
 
-**Datasets (Excel, SPSS, CSV, etc.)**
-
-_Forthcoming._
 
 ## Introduction
 
