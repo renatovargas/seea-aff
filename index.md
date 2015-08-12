@@ -29,7 +29,7 @@ _Last updated: August 11, 2015._
 | Document | Access/Download |
 | --- | :---: |
 | [SEEA AFF Guatemala Report Outline](./site/en/outline.html)  | [HTML](./site/en/outline.html) / [PDF](./docs/outline.pdf)  |
-| [SEEA AFF Assessment Template for Guatemala](./site/en/assessment.html)  | [HTML](./site/en/assessment.html) / [PDF](./docs/assessment.pdf)  |
+| [SEEA AFF Data Assessment Template for Guatemala](./site/en/assessment.html)  | [HTML](./site/en/assessment.html) / [PDF](./docs/assessment.pdf)  |
 
 
 **Information processing scripts (R, PostgreSQL, etc.)[^GH]**
