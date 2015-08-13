@@ -101,7 +101,7 @@ The SEEA AFF Guatemala pilot exercise has been prepared in the month of August 2
 1. SEEA-AFF Guatemala compilation is replicable.
 2. Methodological decisions and assumptions during compilation are documented.
 3. Data sources are available.
-4. Human error is sought after with automatized methods.
+4. Human error is avoided with automatized methods to a sensible extent.
 5. Access to information is actively pursued through the use of open formats and propietary formats of ample diffusion to make data and documents available online.
 
 |Dates 2015 (dd/mm)| Actions |
