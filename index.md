@@ -3,11 +3,6 @@ title: SEEA AFF Guatemala
 css: stylesheets/main.css
 ---
 
-<!-- 
-Compile with Pandoc:
-pandoc -f markdown -t html5 -s index.md --toc -o index.html 
--->
-
 [[Home]](/seea-aff/) [[English]](/seea-aff)  [[Español]](/seea-aff/index_es.html) 
 
 _Repository created and mantained by [Renato Vargas](https://gt.linkedin.com/in/revargas) for the Guatemalan System of Environmental and Economic Accounts (SEEA), with support from the Wealth Accounting and the Valuation of Ecosystem Services [(WAVES)](http://www.wavespartnership.org) initiative._
@@ -113,4 +108,6 @@ The SEEA AFF Guatemala pilot exercise has been prepared in the month of August 2
 | **(27/08 - 01/09)** | Coordination with public entities. |
 | **(02/09 - 03/09)** | Presentation at _FAO Regional Statistical Commision for latin America and the Caribbean Meeting_ celebrated on September 02 and 03 in Panamá. |
 | **(04/09 - 18/09)** | Incorporate comments to the presentation. |
+
+<!-- Compiled with Pandoc: pandoc -f markdown -t html5 -s index.md --toc -o index.html  -->
 
