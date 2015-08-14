@@ -5,13 +5,13 @@ css: stylesheets/main.css
 
 [[Home]](/seea-aff/) [[English]](/seea-aff)  [[Español]](/seea-aff/index_es.html) 
 
-_Repository created and mantained by [Renato Vargas](https://gt.linkedin.com/in/revargas) for the Guatemalan System of Environmental and Economic Accounts (SEEA), with support from the Wealth Accounting and the Valuation of Ecosystem Services [(WAVES)](http://www.wavespartnership.org) initiative._
+_WORK IN PROGRESS, do not cite. Repository created and mantained by [Renato Vargas](https://gt.linkedin.com/in/revargas) for the Guatemalan System of Environmental and Economic Accounts (SEEA), with support from the Wealth Accounting and the Valuation of Ecosystem Services [(WAVES)](http://www.wavespartnership.org) initiative._
 
 _Last updated: August 14, 2015._
 
 ## Tables and files  
 
-**Tables and data sets (Preliminary, do not cite)**
+**Tables and data sets (Preliminary for year 2010 only; do not cite)**
 
 | Description | Access/Download |
 | --- | :---: |
@@ -22,7 +22,7 @@ _Last updated: August 14, 2015._
 | [4.11. Water abstraction](./data/table0411.html)  | [HTML](./data/table0411.html) / [Excel](./data/table0411.xlsx)  
 
 
-**Documentation**.
+**Documentation**
 
 | Document | Access/Download |
 | --- | :---: |
