@@ -6,6 +6,8 @@ title: Table 4.01. Physical flow account for crops
 
 ## 4.01a Physical supply for crops
 
+(Guatemala, year 2010, in tonnes)
+
 <style type="text/css">
 	table.tableizer-table {
 	border: 1px solid #CCC; font-family: Arial, Helvetica, sans-serif;
@@ -84,6 +86,8 @@ title: Table 4.01. Physical flow account for crops
 </table>
 
 ## 4.01b Physical use for crops
+
+(Guatemala, year 2010, in tonnes)
 
 </style><table class="tableizer-table">
 <tr class="tableizer-firstrow"><th></th><th>1. Agricultural Industries for seed</th><th>2. Agricultural Industries for feed</th><th>3. Other Agricultural Industries</th><th>5. Food Processing Industries</th><th>6. Non-Food Processing Industries</th><th>7. Hotels and Restaurants</th><th>(P31Hog) Gasto de consumo final de los hogares</th><th>(P52) Variación de existencias</th><th>(P61) Exportación de bienes</th><th>Total</th></tr>

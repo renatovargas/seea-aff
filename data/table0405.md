@@ -6,6 +6,8 @@ title: Table 4.05. Physical flow account for timber and forest products
 
 ## 4.05a Physical supply for timber and forest products
 
+(Guatemala, year 2010, m<sup>3</sup>)
+
 <style type="text/css">
 	table.tableizer-table {
 	border: 1px solid #CCC; font-family: Arial, Helvetica, sans-serif;
@@ -48,6 +50,9 @@ title: Table 4.05. Physical flow account for timber and forest products
 
 
 ## 4.05b Physical use for timber and forest products
+
+(Guatemala, year 2010, m<sup>3</sup>)
+
 
 </style><table class="tableizer-table">
 <tr class="tableizer-firstrow"><th></th><th>1. Agricultural Industries</th><th>2. Manufacturing and other Industries</th><th>(P31Hog) Gasto de consumo final de los hogares</th><th>(P51) Formación bruta de capital fijo</th><th>(P52) Variación de existencias</th><th>(P61) Exportación de bienes</th><th>Total</th></tr>

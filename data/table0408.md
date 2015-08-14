@@ -6,7 +6,7 @@ title: Table 4.08. Physical flow account for fish and aquatic products
 
 ## 4.08a Physical supply for fish and aquatic forest products
 
-(In tonnes)
+(Guatemala, year 2010, tonnes)
 
 <style type="text/css">
 	table.tableizer-table {
@@ -41,7 +41,7 @@ title: Table 4.08. Physical flow account for fish and aquatic products
 
 ## 4.08b Physical use for fish and aquatic products
 
-(In tonnes)
+(Guatemala, year 2010, tonnes)
 
 
 </style><table class="tableizer-table">
