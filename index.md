@@ -19,6 +19,8 @@ _Last updated: August 14, 2015._
 | [4.02. Physical flow account for livestock](./data/table0402.html)  | [HTML](./data/table0402.html) / [Excel](./data/table0402.xlsx)  |
 | [4.05. Physical flow account for timber and forest products](./data/table0405.html)  | [HTML](./data/table0405.html) / [Excel](./data/table0405.xlsx)  |
 | [4.08. Physical flow account for fish and aquatic products](./data/table0408.html)  | [HTML](./data/table0408.html) / [Excel](./data/table0408.xlsx)  
+| [4.11. Water abstraction](./data/table0411.html)  | [HTML](./data/table0411.html) / [Excel](./data/table0411.xlsx)  
+
 
 **Documentation**.
 
