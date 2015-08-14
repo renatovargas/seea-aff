@@ -14,17 +14,7 @@ css: ../../stylesheets/main.css
 
 # Introduction and background
 
-Wealth Accounting and the Valuation of Ecosystem Services (WAVES) is a
-global partnership that aims to promote sustainable development by
-mainstreaming Natural Capital Accounting (NCA) into development planning
-and ensuring that the national accounts used to measure and plan for
-economic growth include the value of natural capital. Different actors
-at global, national and subnational levels, all work towards
-accomplishing WAVES’ four objectives: help countries adopt and implement
-accounts that are relevant for policies and compile a body of
-experience; develop an ecosystem accounting methodology; establish a
-global platform for training and knowledge sharing; and build
-international consensus around natural capital accounting. Guatemala is one of the core implementing countries and it is involved as a pilot country in the development of the SEEA AFF, which tries to promote understanding of the links between the economy and the environment regarding agriculture, forestry and fisheries.
+Wealth Accounting and the Valuation of Ecosystem Services (WAVES) is a global partnership that aims to promote sustainable development by mainstreaming Natural Capital Accounting (NCA) into development planning and ensuring that the national accounts used to measure and plan for economic growth include the value of natural capital. Different actors at global, national and subnational levels, all work towards accomplishing WAVES’ four objectives: help countries adopt and implement accounts that are relevant for policies and compile a body of experience; develop an ecosystem accounting methodology; establish a global platform for training and knowledge sharing; and build international consensus around natural capital accounting. Guatemala is one of the core implementing countries and it is involved as a pilot country in the development of the SEEA AFF, which tries to promote understanding of the links between the economy and the environment regarding agriculture, forestry and fisheries.
 
 According to the [draft manual](http://unstats.un.org/unsd/envaccounting/aff/GC_Draft.pdf), the SEEA AFF has the objective of examining the connection between economic activity and the environment. Its scope covers agricultural, forestry and fisheries activities as defined in the [International Standard Industrial Clasification (ISIC)](http://unstats.un.org/unsd/cr/registry/default.asp?Lg=3), section [A](http://unstats.un.org/unsd/cr/registry/regcs.asp?Cl=27&Lg=1&Co=A), divisions [01](http://unstats.un.org/unsd/cr/registry/regcs.asp?Cl=27&Lg=1&Co=01), [02](http://unstats.un.org/unsd/cr/registry/regcs.asp?Cl=27&Lg=1&Co=02) y [03](http://unstats.un.org/unsd/cr/registry/regcs.asp?Cl=27&Lg=1&Co=03). The purpose of this coverage of three different types of activity is to facilitate understanding and analysis of the trade-offs and dependencies between these activities that should be considered as part of national and local level planning.
 

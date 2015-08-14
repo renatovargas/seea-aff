@@ -50,7 +50,7 @@ This evaluation template and the subsequent discussion aim to carry out within t
 * National Forest Inventory.
 * Map of forest cover dynamics.
 * Administrative records.
-* Logging licenses (although, SEEA compilation revealed that they represent below 5%). 
+* Logging licenses (although, SEEA compilation revealed that they represent under 5% of all logging). 
 * Forest products exports.
 * Fishing licenses.
 * [Agricultural prices](http://web.maga.gob.gt/precios-agricolas/).
@@ -77,7 +77,7 @@ This evaluation template and the subsequent discussion aim to carry out within t
     * [Faculty of Agronomy of the University of San Carlos of Guatemala](http://fausac.usac.edu.gt), mainly through students' thesis.
 * Although the National Fund for Science and Technology (Fondo Nacional de Ciencia y Tecnología , FONACYT) promotes agricultural research, the country does not have a research agenda that considers the environmental sustainability of agricultural production, forestry and fisheries. 
 * Research in these three areas is developed by the public sector, private sector, and some universities and NGOs.  However research is carried out without collaboration among the different institutes.
-* Information on  R & D for agriculture can be found at:
+* Information on  R&D for agriculture can be found at:
 http://www.asti.cgiar.org/guatemala
 * The private sector conducts researches mainly on two instances:
   * [The Guatemalan Center for Sugarcane Research and Training (CENGICAÑA)](http://www.cengicana.org/en/home) was created by the Sugar Association of Guatemala (ASAZGUA) in 1992 to support the technological advancement of the sugar industry, and with the aim of improving production and productivity of sugar cane and its derivatives cultivation. The Sugarcane Center for Research and Training is funded by the mills that make the sugar industry of Guatemala.  Contributions to the budget of the Centre are offered in proportional way to the sugar output.  
@@ -97,10 +97,12 @@ http://www.asti.cgiar.org/guatemala
 * Meat products 
 * Non-Meat Livestock products
 * Exports and Imports, environmental and non-environmental inputs for production, value of production, associated taxes.
+
+Yes, through the National Agricultural Survey, and indirectly through the System of National Accounts.
   
 **b. Are available data for detailed types of products? If so, what classifications are used? What are the most important products of analytical interest?**
 
-* There is not detailed data, and there are no specific classifications.
+* There are no detailed data, and there are no specific classifications.
 
 **c. Does your country collect data on the number of livestock by livestock type?**
 
@@ -108,11 +110,11 @@ http://www.asti.cgiar.org/guatemala
 
 **d. Does your country collect data on the number of products used for intermediate consumption, household final consumption or in terms of changes in inventory?**
 
-* Yes.
+* Yes. Key basic data for the Household sector is the Life Standards Measurement Survey (ENCOVI). It is available for the years 2001, 2006, and 2011. Intermediate consumption basic data comes from the Economic Conditions Survey, which is not available for the public, but is used to compile the System of National Accounts Supply and Use tables. 
 
 **e. Is there availability of data on agricultural production at the subnational level? If so, at what level of aggregate demand?**
 
-* Municipal level.
+* Municipal level and plot level with the National Agricultural Survey.
 
 ## No. 2. Forest products (see table SEEA Agri N.° 2.1 - 2.2)
 
@@ -146,7 +148,7 @@ g. Does your country collect data on logging residues as a result of forestry?
 
 **a.  Does your country collect data on the quantity of production, imports and exports for fish products, including capture and aquaculture? Is there included subsistence / traditional fishing in these measures? Are data on capture collected by Guatemala vessels as well as foreign flags?**
 
-* Partially. Fishing activities information is updated through arisanal fisheries surveys.
+* Partially. Fishing activities information is updated through artisanal fisheries surveys.
 
 **b. Does your country collect data on the quantity of fishery products used for intermediate consumption, household final consumption or in terms of changes in inventory?**
 
@@ -167,6 +169,8 @@ g. Does your country collect data on logging residues as a result of forestry?
 **f. Does your country collect data on fishing discarded catch?**
 
 * No.
+
+FAO supplies data on natural catch and acuaculture fishing through its FishstatJ databases.
   
 ## No. 4.  Water resources and water use (see tables SEEA Agri N.° 4.1-4.4)
 
