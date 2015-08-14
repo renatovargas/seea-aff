@@ -12,5 +12,5 @@ title: Notes on SEEA AFF compilation
 
 ### Forestry supply table
 
-* Forestry supply includes animal species and the unit recorded is "cubic meters (m^3)". This might be a mistake.  Especially because, whereas other forest products have amounts with decimal places (i.e. continuous quantities), animal products have integers (i.e. discreet quantities), suggesting "number of individuals".
+* Forestry supply includes animal species and the unit recorded is "cubic meters (m^3^)". This might be a mistake.  Especially because, whereas other forest products have amounts with decimal places (i.e. continuous quantities), animal products have integers (i.e. discreet quantities), suggesting "number of individuals".
 
