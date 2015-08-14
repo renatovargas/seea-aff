@@ -76,12 +76,12 @@ sup <- dbGetQuery(con,
 			scn.naeg BETWEEN 810 AND 5910
 		AND
 			scn.ntg = 6001
-		THEN	'3. Manufacturing and other Industries'
+		THEN	'2. Manufacturing and other Industries'
 		WHEN
 			scn.naeg = 0
 		AND
 			scn.ntg = 6010
-		THEN 	'4. Imports'
+		THEN 	'3. Imports'
 		WHEN    
 			scn.naeg=0 
 		AND
@@ -159,61 +159,43 @@ use <- dbGetQuery(con,
     ntg20.trans as transaction,
 	CASE 
 		WHEN 
-			scn.naeg BETWEEN 110 AND 240
+			scn.naeg BETWEEN 110 AND 750
 		AND
 			scn.ntg = 6002
-		THEN 	'1. Agricultural Industries for seed'
-		WHEN
-			scn.naeg BETWEEN 310 AND 460
-		AND
-			scn.ntg = 6002
-		THEN	'2. Agricultural Industries for feed'
-		WHEN
-			scn.naeg BETWEEN 520 AND 710
-		AND	
-			scn.ntg = 6002
-		THEN	'3. Other agriculture'
-		WHEN
-			scn.naeg = 720
-		THEN	'2. Agricultural Industries for feed'
-		WHEN
-			scn.naeg BETWEEN 730 AND 750
-		AND	
-			scn.ntg = 6002
-		THEN	'3. Other Agricultural Industries'
+		THEN 	'1. Agricultural Industries'
 		WHEN
 			scn.naeg BETWEEN 810 AND 1020
 		AND	
 			scn.ntg = 6002
-		THEN	'6. Non-Food Processing Industries'
+		THEN	'2. Non-Food Processing Industries'
 		WHEN
 			scn.naeg BETWEEN 1110 AND 2050
 		AND	
 			scn.ntg = 6002
-		THEN	'5. Food Processing Industries'
+		THEN	'3. Food Processing Industries'
 		WHEN
 			scn.naeg BETWEEN 2110 AND 3620
 		AND	
 			scn.ntg = 6002
-		THEN	'6. Non-Food Processing Industries'
+		THEN	'2. Non-Food Processing Industries'
 		WHEN
 			scn.naeg = 3710
-		THEN	'4. Energy Industries (Electricity)'
+		THEN	'5. Energy Industries (Electricity)'
 		WHEN
 			scn.naeg BETWEEN 3810 AND 4030
 		AND	
 			scn.ntg = 6002
-		THEN	'6. Non-Food Processing Industries'
+		THEN	'2. Non-Food Processing Industries'
 		WHEN
 			scn.naeg BETWEEN 4110 AND 4120
 		AND	
 			scn.ntg = 6002
-		THEN	'7. Hotels and Restaurants'
+		THEN	'4. Hotels and Restaurants'
 		WHEN
 			scn.naeg BETWEEN 4210 AND 5910
 		AND	
 			scn.ntg = 6002
-		THEN	'6. Non-Food Processing Industries'
+		THEN	'2. Non-Food Processing Industries'
 		WHEN
 			scn.naeg = 0
 		THEN 	ntg20.trans
@@ -238,7 +220,7 @@ AND
      scn.ntg BETWEEN 6002 AND 6260
 
 ORDER BY
-     scn.npg,scn.naeg, scn.ntg")
+     scn.npg,seeaaff,scn.naeg;")
 
 dbDisconnect(con)
 dbUnloadDriver(drv)
