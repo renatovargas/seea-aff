@@ -5,7 +5,7 @@ css: stylesheets/main.css
 
 [[Home]](/seea-aff/) [[English]](/seea-aff)  [[Español]](/seea-aff/index_es.html) 
 
-_WORK IN PROGRESS, do not cite. Repository created and mantained by [Renato Vargas](https://gt.linkedin.com/in/revargas) for the Guatemalan System of Environmental and Economic Accounts (SEEA), with support from the Wealth Accounting and the Valuation of Ecosystem Services [(WAVES)](http://www.wavespartnership.org) initiative._
+_**WORK IN PROGRESS**, do not cite. Repository created and mantained by [Renato Vargas](https://gt.linkedin.com/in/revargas) for the Guatemalan System of Environmental and Economic Accounts (SEEA), with support from the Wealth Accounting and the Valuation of Ecosystem Services [(WAVES)](http://www.wavespartnership.org) initiative._
 
 _Last updated: August 14, 2015._
 
