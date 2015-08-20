@@ -7,7 +7,7 @@ css: stylesheets/main.css
 
 _**WORK IN PROGRESS**, do not cite. Repository created and mantained by [Renato Vargas](https://gt.linkedin.com/in/revargas) for the Guatemalan System of Environmental and Economic Accounts (SEEA), with support from the Wealth Accounting and the Valuation of Ecosystem Services [(WAVES)](http://www.wavespartnership.org) initiative._
 
-_Last updated: August 14, 2015._
+_Last updated: August 18, 2015._
 
 ## Tables and files  
 
@@ -114,5 +114,5 @@ The SEEA AFF Guatemala pilot exercise has been prepared in the month of August 2
 | **(02/09 - 03/09)** | Presentation at _FAO Regional Statistical Commision for latin America and the Caribbean Meeting_ celebrated on September 02 and 03 in Panamá. |
 | **(04/09 - 18/09)** | Incorporate comments to the presentation. |
 
-<!-- Compiled with Pandoc pandoc -f markdown -t html5 -s index.md --toc -o index.html  -->
+<!-- Compiled with Pandoc pandoc -f markdown -t html5 -s index.md -toc -o index.html  -->
 
