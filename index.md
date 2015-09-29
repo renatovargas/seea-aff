@@ -20,7 +20,7 @@ _Last updated: September 16, 2015._
 | [4.05. Physical flow account for timber and forest products](./data/table0405.html)  | [HTML](./data/table0405.html) / [Excel](./data/table0405.xlsx)  |
 | [4.08. Physical flow account for fish and aquatic products](./data/table0408.html)  | [HTML](./data/table0408.html) / [Excel](./data/table0408.xlsx)  
 | [4.11. Water abstraction](./data/table0411.html)  | [HTML](./data/table0411.html) / [Excel](./data/table0411.xlsx)  
-
+| [4.13. Energy use](./data/table0413.html)  | [HTML](./data/table0413.html) / [Excel](./data/table0413.xlsx)  
 
 **Documentation**
 
@@ -39,6 +39,7 @@ _Last updated: September 16, 2015._
 [4_05-physical_timber.R](https://github.com/renatovargas/seea-aff/blob/master/scripts/4_05-physical_timber.R) | Build table 4.05. Physical flow account for timber and forest products. |
 [4_08-physical_fish.R](https://github.com/renatovargas/seea-aff/blob/master/scripts/4_08-physical_fish.R) | Build table 4.08. Physical flow account for fish and aquatic products. |
 [4_11-physical_water.R](https://github.com/renatovargas/seea-aff/blob/master/scripts/4_11-physical_water.R) | Build table 4.11. Physical water abstraction. |
+[4_13-physical_energy.R](https://github.com/renatovargas/seea-aff/blob/master/scripts/4_13-physical_energy.R) | Build table 4.13. Energy use. |
 
 [^GH]: Explore and download the project files, including this page, on [GitHub](https://github.com/renatovargas/seea-aff).
 
