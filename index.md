@@ -21,6 +21,7 @@ _Last updated: September 16, 2015._
 | [4.08. Physical flow account for fish and aquatic products](./data/table0408.html)  | [HTML](./data/table0408.html) / [Excel](./data/table0408.xlsx)  
 | [4.11. Water abstraction](./data/table0411.html)  | [HTML](./data/table0411.html) / [Excel](./data/table0411.xlsx)  
 | [4.13. Energy use](./data/table0413.html)  | [HTML](./data/table0413.html) / [Excel](./data/table0413.xlsx)  
+| [4.14a. Greenhouse Gas Emissions (as recommended)](./data/table0414a.html)  | [HTML](./data/table0414a.html) / [Excel](./data/table0414a.xlsx)  
 
 **Documentation**
 
@@ -40,6 +41,7 @@ _Last updated: September 16, 2015._
 [4_08-physical_fish.R](https://github.com/renatovargas/seea-aff/blob/master/scripts/4_08-physical_fish.R) | Build table 4.08. Physical flow account for fish and aquatic products. |
 [4_11-physical_water.R](https://github.com/renatovargas/seea-aff/blob/master/scripts/4_11-physical_water.R) | Build table 4.11. Physical water abstraction. |
 [4_13-physical_energy.R](https://github.com/renatovargas/seea-aff/blob/master/scripts/4_13-physical_energy.R) | Build table 4.13. Energy use. |
+[4_14a-physical_ghg.R](https://github.com/renatovargas/seea-aff/blob/master/scripts/4_14-physical_ghg.R) | Build table 4.14a. Greenhouse Gas Emissions (as recommended) |
 
 [^GH]: Explore and download the project files, including this page, on [GitHub](https://github.com/renatovargas/seea-aff).
 
