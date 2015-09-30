@@ -28,15 +28,25 @@ What are the limitations of the data?
 
 ## Agricultural products and related environmental assets
 
-Forestry products and related environmental assets 
-Fisheries products and related environmental assets
-Water resources	
-Energy
-Greenhouse Gas GHG emissions
-Fertilizers, nutrient flows and pesticides
-Land
-Soil resources    
- Other economic data
+## Forestry products and related environmental assets 
+
+
+## Fisheries products and related environmental assets
+
+
+## Water resources	
+
+## Energy
+
+## Greenhouse Gas GHG emissions
+
+## Fertilizers, nutrient flows and pesticides
+
+## Land
+
+## Soil resources    
+
+## Other economic data
 
 # Results
 
