@@ -7,7 +7,7 @@ css: stylesheets/main.css
 
 _**WORK IN PROGRESS**, do not cite. Repository created and mantained by [Renato Vargas](https://gt.linkedin.com/in/revargas) for the Guatemalan System of Environmental and Economic Accounts (SEEA), with support from the Wealth Accounting and the Valuation of Ecosystem Services [(WAVES)](http://www.wavespartnership.org) initiative._
 
-_Last updated: September 29, 2015._
+_Last updated: September 30, 2015._
 
 ## Tables and files  
 
