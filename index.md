@@ -24,7 +24,7 @@ _Last updated: September 30, 2015._
 | [4.14. Greenhouse Gas Emissions (our suggestion)](./data/table0414.html)  | [HTML](./data/table0414.html) / [Excel](./data/table0414.xlsx)  
 | [4.14x. Greenhouse Gas Emissions (as recommended)](./data/table0414a.html)  | [HTML](./data/table0414a.html) / [Excel](./data/table0414a.xlsx)  
 | [4.20. Monetary Supply and Use table](./data/table0420.html)  | [HTML](./data/table0420.html) / [Excel](./data/table0420.xlsx)  
-
+| [4.21. Extended Income Account](./data/table0421.html)  | [HTML](./data/table0421.html) / [Excel](./data/table0421.xlsx)  
 
 
 **Documentation**
@@ -48,7 +48,7 @@ _Last updated: September 30, 2015._
 [4_14-physical_ghg.R](https://github.com/renatovargas/seea-aff/blob/master/scripts/4_14-physical_ghg.R) | Build table 4.14a. Greenhouse Gas Emissions (Our suggestion) |
 [4_14a-physical_ghg.R](https://github.com/renatovargas/seea-aff/blob/master/scripts/4_14a-physical_ghg.R) | Build table 4.14a. Greenhouse Gas Emissions (as recommended) |
 [4_20-monetary.R](https://github.com/renatovargas/seea-aff/blob/master/scripts/4_20-monetary.R) | Build table 4.20. Monetary Supply and Use |
-
+[4_21-income.R](https://github.com/renatovargas/seea-aff/blob/master/scripts/4_21-income.R) | Build table 4.21. Extended Income Account |
 
 [^GH]: Explore and download the project files, including this page, on [GitHub](https://github.com/renatovargas/seea-aff).
 
