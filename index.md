@@ -3,7 +3,7 @@ title: SEEA AFF Guatemala
 css: stylesheets/main.css
 ---
 
-[[Home]](/seea-aff/) [[English]](/seea-aff)  <!-- [[Español]](/seea-aff/index_es.html) --> 
+[[Home]](/seea-aff/) [[English]](/seea-aff)  <!--[ --> [Español] <!-- ](/seea-aff/index_es.html) -->
 
 _**WORK IN PROGRESS, DO NOT CITE.** Repository created and mantained by [Renato Vargas](https://gt.linkedin.com/in/revargas) for the Guatemalan System of Environmental and Economic Accounts (SEEA), with support from the Wealth Accounting and the Valuation of Ecosystem Services [(WAVES)](http://www.wavespartnership.org) initiative._
 
