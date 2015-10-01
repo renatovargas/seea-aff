@@ -73,12 +73,11 @@ With its strong connections to the SEEA Central Framework and the SNA, the SEEA 
 
 The design of the SEEA AFF framework supports discussion in five broad policy themes.
 
-* Theme 1: Activity and product specific inputs: Under this theme the focus is on the analysis of the economic and environmental information about the most important products for a country and the associated trends in the use of environmental inputs and the generation of residual flows.
-* Theme 2: Food product consumption, losses and waste 
-* Theme 3: Bioenergy
-* Theme 4: Use of environmental assets (timber, fisheries, water, soil). 
-* Theme 5: Cross-industry and activity perspectives. 
-* Other relevant policy connections.
+* **Theme 1:** Activity and product specific inputs: Under this theme the focus is on the analysis of the economic and environmental information about the most important products for a country and the associated trends in the use of environmental inputs and the generation of residual flows.
+* **Theme 2:** Food product consumption, losses and waste 
+* **Theme 3:** Bioenergy
+* **Theme 4:** Use of environmental assets (timber, fisheries, water, soil). 
+* **Theme 5:** Cross-industry and activity perspectives. 
 
 # Data
 

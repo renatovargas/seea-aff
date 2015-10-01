@@ -104,7 +104,7 @@ The draft SEEA AFF has the following data domains and base accounts:
 
 [^1]: Nitrogen and phosphorous budgets have been developed outside of the SEEA framework but, in essence, are a form of asset accounting for these particular elements.
 
-## Implementation roadmap
+## Implementation principles
 
 The SEEA AFF Guatemala pilot exercise has been prepared in the month of August 2015, under the following principles:
 
@@ -114,15 +114,16 @@ The SEEA AFF Guatemala pilot exercise has been prepared in the month of August 2
 4. Human error is avoided with automatized methods to a sensible extent.
 5. Access to information is actively pursued through the use of open formats and propietary formats of ample diffusion to make data and documents available online.
 
+<!--
 |Dates 2015 (dd/mm)| Actions |
-|---|---|
+|- - -|- - -|
 | **(24/07 - 31/07)** | Adapt SEEA AFF draft manual recommendations to local context.|
 | **(03/08 - 07/08)** | Document information sources, data availability, and information gaps. |
 | **(10/08 - 21/08)** | Compile and document SEEA-AFF Guatemala. |
 |**(24/08 - 28/08)**| Develop report of recommendations for regular compilation of SEEA AFF (includes tables, relevant findings, and potential policy uses). |
 | **(27/08 - 01/09)** | Coordination with public entities. |
 | **(02/09 - 03/09)** | Presentation at _FAO Regional Statistical Commision for latin America and the Caribbean Meeting_ celebrated on September 02 and 03 in Panamá. |
-| **(04/09 - 18/09)** | Incorporate comments to the presentation. |
+| **(04/09 - 18/09)** | Incorporate comments to the presentation. | -->
 
 <!-- Compiled with Pandoc and the toc takes two hyphens, not one but it messes up the html comment
      when compiling with Pandoc if we leave it in here:
