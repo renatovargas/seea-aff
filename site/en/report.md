@@ -111,11 +111,11 @@ What are the limitations of the data?
 
 # Results
 
-	* Base tables.
-	* Combined presentations.
+* Base tables.
+* Combined presentations.
 
 # Discussion
 
-	* Discuss relevant findings.
-	* Present policy recommendations
-	* Future steps to improve the compilation of the SEEA AFF.
+* Discuss relevant findings.
+* Present policy recommendations
+* Future steps to improve the compilation of the SEEA AFF.
