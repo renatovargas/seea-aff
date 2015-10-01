@@ -106,7 +106,7 @@ The draft SEEA AFF has the following data domains and base accounts:
 
 ## Implementation principles
 
-The SEEA AFF Guatemala pilot exercise has been prepared in the month of August 2015, under the following principles:
+The SEEA AFF Guatemala pilot exercise is prepared under the following principles:
 
 1. SEEA-AFF Guatemala compilation is replicable.
 2. Methodological decisions and assumptions during compilation are documented.
