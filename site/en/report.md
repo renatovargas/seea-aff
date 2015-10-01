@@ -1,14 +1,15 @@
 ---
 title: SEEA AFF Draft Technical Report
-css: stylesheets/main.css
+css: ../../stylesheets/main.css
 ---
 
-[[Home]](/seea-aff/) [[English]](/seea-aff)  <!-- [[Español]](/seea-aff/index_es.html) --> 
+[[Home]](/seea-aff/) [[English]](/seea-aff/site/en/outline.html)  \[Español\] 
 
  | Wealth Accounting and the Valuation of Ecosystem Services (WAVES) |
  | --- |
  | SEEA AFF Guatemala Draft Technical Report |
  | _Updated: September 30, 2015._ |
+
 
 # Introduction
 
