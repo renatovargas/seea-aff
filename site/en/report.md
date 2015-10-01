@@ -61,7 +61,24 @@ The draft SEEA AFF has the following data domains and base accounts:
     * Monetary supply and use table for agricultural, forestry and fisheries products
     * Extended production and income account for agricultural, forestry and fisheries activities
 
+With its strong connections to the SEEA Central Framework and the SNA, the SEEA AFF brings with it the many features that these accounting based statistical frameworks provide to the organization of information and statistical activities. Important possibilities in this regard include the following.
 
+* Conceptual framework for a database and central point for organizing data.  
+* Data gap analysis and gap filling. The SEEA AFF is a broad framework designed on the information that would be most relevant rather than on the basis of the information that are currently available. 
+* Data collection and reporting. As a conceptual framework SEEA AFF is able to support and encourage the use of consistent data item definitions across different collections.
+* One of the important motivations for the SEEA is to assist in the derivation of indicators that reflect cross-domain comparisons.
+* The information in the SEEA AFF can also be used to support the compilation of environmentally extended input-output tables (EE-IOT). 
+* Once EE-IOT are established a range of different types of analysis may be supported, like multiplier analysis, footprint indicators, structural decomposition analysis, extended productivity analysis, modeling of international trade, general and partial equilibrium analysis, life cycle analysis
+
+
+The design of the SEEA AFF framework supports discussion in five broad policy themes.
+
+* Theme 1: Activity and product specific inputs: Under this theme the focus is on the analysis of the economic and environmental information about the most important products for a country and the associated trends in the use of environmental inputs and the generation of residual flows.
+* Theme 2: Food product consumption, losses and waste 
+* Theme 3: Bioenergy
+* Theme 4: Use of environmental assets (timber, fisheries, water, soil). 
+* Theme 5: Cross-industry and activity perspectives. 
+* Other relevant policy connections.
 
 # Data
 
