@@ -125,16 +125,83 @@
 </ul>
 <p>The design of the SEEA AFF framework supports discussion in five broad policy themes.</p>
 <ul>
-<li>Theme 1: Activity and product specific inputs: Under this theme the focus is on the analysis of the economic and environmental information about the most important products for a country and the associated trends in the use of environmental inputs and the generation of residual flows.</li>
-<li>Theme 2: Food product consumption, losses and waste</li>
-<li>Theme 3: Bioenergy</li>
-<li>Theme 4: Use of environmental assets (timber, fisheries, water, soil).</li>
-<li>Theme 5: Cross-industry and activity perspectives.</li>
-<li>Other relevant policy connections.</li>
+<li><strong>Theme 1:</strong> Activity and product specific inputs: Under this theme the focus is on the analysis of the economic and environmental information about the most important products for a country and the associated trends in the use of environmental inputs and the generation of residual flows.</li>
+<li><strong>Theme 2:</strong> Food product consumption, losses and waste</li>
+<li><strong>Theme 3:</strong> Bioenergy</li>
+<li><strong>Theme 4:</strong> Use of environmental assets (timber, fisheries, water, soil).</li>
+<li><strong>Theme 5:</strong> Cross-industry and activity perspectives.</li>
 </ul>
 <h1 id="data">Data</h1>
+<p>Guatemala has an experience of about a decade in the compilation of Environmental and Economic Accounts. There is available information for the period 2001-2010. Recent efforts by the Wealth Accounting and the Valuation of Ecosystem Services inititative have resulted in the construction of a PostgreSQL database to hold the information. Unlike IT solutions with which have been used in the past in order to translate the tables into database format, the Guatemalan SEEA database has been constructed by people with natural capital accounts compilation experience. This has lead to the construction of a database more suited for analytical needs, and has removed the &quot;black box&quot; limitations that remain when outsourcing this step to IT experts with no accounting experience.</p>
+<p>Since the SEEA AFF manual explicitly states that it is not an experimental manual, but an application of the SEEA CF principles with a focus on the Agriculture, Forestry, and Fisheries, in this pilot implementation there was an expectation to test to which extent the Guatemalan SEEA database could provide the necessary inputs for the SEEA AFF framework.</p>
+<p>The Guatemalan SEEA database has four core tables for the different conceptual domains of the information (name of the table given in parentheses), and contains data for the years 2001-2010.</p>
+<ul>
+<li><strong>Supply and use table data (scn)</strong>: This table includes information from the System of National Accounts in monetary terms, including extended income accounts. For select commodities (especially agricultural) physical data in tonnes is also available. This information is compiled by the Guatemalan Central Bank (BANGUAT).</li>
+<li><strong>Environmental accounts data (scae)</strong>: This table includes physical data from forest flow accounts, water flow accounts, and energy flow accounts.</li>
+<li><strong>Residual account data (scaeresid)</strong>: This table includes waste generation information by economic activity.</li>
+<li><strong>GHG emission flows (scaeemis)</strong>: This table includes greenhouse gas emissions from the combustion of different energy sources.</li>
+<li><strong>Complementary tables</strong>: Various tables complement the previous and describe activity names (naeg), product names (npg), transaction names (ntg), type of emissions (clasifemis), types of waste (resid), types of flows (flujos), units of measurement (unidades), and a listing of compiled accounts (cuentas).</li>
+</ul>
+<p>In order to ensure replicability of the study and document the decisions made for this pilot implementation, processing scripts in the R programming language<a href="#fn1" class="footnoteRef" id="fnref1"><sup>1</sup></a> were used and are available upon request. One beneficial characteristic of this approach is that all data operations ar non-destructive and dispense with the end use of data files for compilation. These scripts facilitate various tasks, including:</p>
+<ul>
+<li>Query the PostgreSQL database using the SQL language for table information.</li>
+<li>Creating table ad-hoc orderings of SEEA AFF relevant industry, product, or transaction classifications.</li>
+<li>Creating cross-tabulations to produce tables as close as possible to the recommendations in the manual.</li>
+<li>Producing spreadsheet files with tables in popular office suite formats.</li>
+</ul>
+<p>Below there is a description of the relevant data considerations for each of the SEEA AFF data domains. In some cases, the Guatemalan SEEA database has either not been supplied with existing accounting data, or is not equipped for the type of data requested. In those cases, we recommend a solution for later iterations of the Guatemalan SEEA AFF implementation.</p>
 <p>Describe the data. Where is it from? What estimations/calculations are needed? What are the limitations of the data?</p>
 <h2 id="agricultural-products-and-related-environmental-assets">Agricultural products and related environmental assets</h2>
+<p><strong>Crops</strong></p>
+<p>The base For this SEEA AFF domain comes from the physical base flow account for crops in table 4.01 of the manual.</p>
+<p>The Guatemalan SEEA database has relevant net output information for various agricultural products, as well as for some of their processed by-products down the manufacturing chain in tonnes for the relevant industries. This information comes from the agricultural, food industries, and commodity SNA worksheets. It has been included in the Supply and Use information compiled by the Central Bank.</p>
+<p>In the pilot implementation of <a href="http://renatovargas.github.io/seea-aff/data/table0401.html">table 4.01</a> we have included all subproducts for stakeholder consultation purposes. In later implementations, focus could be placed on only those commodities and industries that are relevant from a food security perspective.</p>
+<p>Following the SEEA AFF recommendation and taking into account the available information scope, we have grouped output into:</p>
+<ul>
+<li>Agricultural Industries</li>
+<li>Manufacturing and other Industries</li>
+<li>Imports'Agricultural Industries</li>
+<li>Manufacturing and other Industries</li>
+</ul>
+<p>Conversely, product use has been divided by the following industry aggregations:</p>
+<ul>
+<li>Agricultural Industries for seed</li>
+<li>Agricultural Industries for feed</li>
+<li>Other Agricultural Industries</li>
+<li>Food Processing Industries</li>
+<li>Non-Food Processing Industries</li>
+<li>Hotels and Restaurants</li>
+<li>Household final consumption</li>
+<li>Stock variation</li>
+<li>Exports</li>
+</ul>
+<p>The manual suggests the inclusion of gross output, and adds a column which tracks losses in the production process, which would then be substracted in order to obtain net output. As predicted in the manual, losses information is not readily available in the database and would have to be calculated with ratios. This has not yet been done in the pilot implementation and is a limitation for the construction of efficiency indicators.</p>
+<p><strong>Livestock</strong></p>
+<p>The base For this SEEA AFF domain comes from the physical base flow account for crops in table 4.02 of the manual.</p>
+<p>The Guatemalan SEEA database has relevant net output information for various animal assets, as well as for some of their processed by-products down the manufacturing chain in tonnes for the relevant industries. This information comes from the agricultural, food industries, and commodity SNA worksheets. It has been included in the Supply and Use information compiled by the Central Bank.</p>
+<p>The approach is similar to the agriculture table, but with a focus on livestock products and by-products. Following the SEEA AFF recommendation and taking into account the available information scope, we have grouped output into:</p>
+<ul>
+<li>Agricultural Industries</li>
+<li>Manufacturing and other Industries</li>
+<li>Imports'Agricultural Industries</li>
+<li>Manufacturing and other Industries</li>
+</ul>
+<p>And product use has been divided by the following industry aggregations:</p>
+<ul>
+<li>Agricultural Industries for seed</li>
+<li>Agricultural Industries for feed</li>
+<li>Other Agricultural Industries</li>
+<li>Food Processing Industries</li>
+<li>Non-Food Processing Industries</li>
+<li>Hotels and Restaurants</li>
+<li>Household final consumption</li>
+<li>Stock variation</li>
+<li>Exports</li>
+</ul>
+<p><strong>Assets</strong></p>
+<p>Tables 4.03 and 4.04 of the SEEA AFF study important asset information on livestock headcounts and plantations consistent with land use accounts, respectively. At this point, the Guatemalan SEEA database used in this excersise does not contain land use information, even if partial information exists outside of it.</p>
+<p>Land use and land use change information exists as part of mapping initiatives of Guatemala for select years and could be included as reference. Yearly information is not available.</p>
+<p>Livestock information is only available for select years as well from an Agricultural Census conducted in the agricultural period 2002-2003 and an agricultural survey from 2014. Tables for those years could be constructed in a new iteration of this effort.</p>
 <h2 id="forestry-products-and-related-environmental-assets">Forestry products and related environmental assets</h2>
 <h2 id="fisheries-products-and-related-environmental-assets">Fisheries products and related environmental assets</h2>
 <h2 id="water-resources">Water resources</h2>
@@ -155,5 +222,22 @@
 <li>Present policy recommendations</li>
 <li>Future steps to improve the compilation of the SEEA AFF.</li>
 </ul>
+<!-- Google Analytics -->
+<script>  
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-67331632-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+<section class="footnotes">
+<hr />
+<ol>
+<li id="fn1"><p>R is a language and environment for statistical computing and graphics. It compiles and runs on a wide variety of UNIX platforms, Windows and MacOS. It is freely available under the General Public Licence (GPL) at https://www.r-project.org.<a href="#fnref1">↩</a></p></li>
+</ol>
+</section>
 </body>
 </html>
